@@ -1,5 +1,5 @@
 window.addEventListener('load', (e) => {
-	var confettiSettings = { target: 'confetti', props: ['square'] };
+	var confettiSettings = { target: 'confetti-canvas', props: ['square'] };
 	var confetti = new ConfettiGenerator(confettiSettings);
 	confetti.render();
 });
