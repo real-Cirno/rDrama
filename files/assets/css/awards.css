@@ -18,9 +18,11 @@
 .ricardo {
 	position: absolute;
 	z-index: 9997;
-	top:70%;
-	left:-10%;
 	pointer-events: none !important;
+}
+
+.ricardo img {
+	max-height:300px;
 }
 
 .ricardoleft {
@@ -39,4 +41,31 @@
 @keyframes ricardoright {
 	from {left:100%;}
 	to {left:80%;}
+}
+
+#ricardo1 {
+	top:70%;
+	left:-10%;
+}
+
+#ricardo2 {
+	top:80%;
+	left:50%;
+	animation: ricardo2 1.7s linear infinite !important;
+}
+
+#ricardo3 {
+	top:85%;
+	animation: ricardo3 5s linear infinite alternate !important;
+}
+
+@keyframes ricardo2 {
+	0% {opacity:20%}
+	50% {opacity:100%}
+	100% {opacity:0%}
+}
+
+@keyframes ricardo3 {
+	from {left:0}
+	to {left:90%}
 }

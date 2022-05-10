@@ -1,17 +1,38 @@
 var isleft = true
 setInterval(() => {
-	let ricardo = document.getElementsByClassName("ricardo")[0]
+	let ricardo1 = document.getElementById("ricardo1")
     var height = Math.floor(Math.random()*60)+10 
-    ricardo.firstElementChild.src = ""
+    ricardo1.firstElementChild.src = ""
 
 	if (isleft == true) {
-		ricardo.className = "ricardo ricardoright"
+		ricardo1.className = "ricardo ricardoright"
 		isleft = false
 	} else {
-		ricardo.className = "ricardo ricardoleft"
+		ricardo1.className = "ricardo ricardoleft"
 		isleft = true
 	}
 
-	ricardo.firstElementChild.src = "/assets/images/ricardo1.gif"
-	ricardo.style.top=height+"%"
+	ricardo1.firstElementChild.src = "/assets/images/ricardo1.gif"
+	ricardo1.style.top=height+"%"
 }, 5800)
+
+setInterval(() => {
+	let ricardo2 = document.getElementById("ricardo2")
+	var xpos = Math.floor(Math.random()*9)*10
+
+	ricardo2.style.left=xpos+"%"
+}, 1700)
+
+var istop = false
+setInterval(() => {
+	let ricardo3 = document.getElementById("ricardo3")
+	if (istop == true) {
+		ricardo3.style.top = "85%"
+		ricardo3.style.transform = "rotate(0deg)"
+		istop = false
+	} else {
+		ricardo3.style.top = "0%"
+		ricardo3.style.transform = "rotate(180deg)"
+		istop = true
+	}
+}, 5000)
