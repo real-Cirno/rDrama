@@ -5102,7 +5102,3 @@ p a {
 .checkmark {
 	color: #1DA1F2 !important;
 }
-
-i[title] {
-	cursor: pointer;
-}
