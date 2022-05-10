@@ -5095,7 +5095,7 @@ th, td {
     transform: translate(-70px,-22px);
 }
 
-blockquote a {
+p a {
 	filter: brightness(150%);
 }
 
