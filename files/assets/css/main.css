@@ -4425,7 +4425,7 @@ textarea {
 }
 @media (min-width: 992px) {
 	.card-columns {
-		column-count: 7 !important;
+		column-count: 8 !important;
 }
 }
 .container, .container-fluid {
@@ -5097,4 +5097,12 @@ th, td {
 
 blockquote a {
 	filter: brightness(150%);
+}
+
+.checkmark {
+	color: #1DA1F2 !important;
+}
+
+i[title] {
+	cursor: pointer;
 }
