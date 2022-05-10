@@ -5099,8 +5099,8 @@ p a {
 	filter: brightness(150%);
 }
 
-img {
-	filter: brightness(100%);
+p a img {
+	filter: brightness(66%);
 }
 
 .checkmark {
