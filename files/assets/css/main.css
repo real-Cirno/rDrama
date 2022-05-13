@@ -5095,14 +5095,6 @@ th, td {
     transform: translate(-70px,-22px);
 }
 
-p a {
-	filter: brightness(150%);
-}
-
-p a img {
-	filter: brightness(66%);
-}
-
 .checkmark {
 	color: #1DA1F2 !important;
 }
