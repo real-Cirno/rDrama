@@ -4477,7 +4477,7 @@ blockquote p {
 	cursor: pointer;
 }
 video {
-	max-height: 20rem !important;
+	max-height: 50vh !important;
 	max-width: 100% !important;
 	margin-top: 0.5rem !important;
 	margin-bottom: 0.5rem !important;
