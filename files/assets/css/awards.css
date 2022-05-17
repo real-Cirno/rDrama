@@ -76,9 +76,3 @@
 	from {left:0}
 	to {left:90%}
 }
-
-@media (max-width: 768px) {
-	#ricardo2, #ricardo3 {
-		display:none !important;
-	}
-}
