@@ -4539,7 +4539,7 @@ video {
 .text-removed {
 	color: #ffabab !important;
 }
-.mirrored, img[alt^=":!"], img[alt^=":#!"], span[alt$="pat:"][alt^=":!"], span[alt$="pat:"][alt^=":#!"] {
+.mirrored, img[alt^=":!"], img[alt^=":#!"], span[alt^=":!"] {
 	transform: scaleX(-1);
 	-webkit-transform: scaleX(-1);
 }
@@ -4599,22 +4599,20 @@ span[alt$="pat:"] {
     position: relative;
     display: inline-block;
 }
-img[src="/assets/images/hand.webp"]+img {
-    animation: pat-pfp-anim 0.3s infinite !important;
-    transform-origin: bottom center;
-    margin-top: 10%;
-    text-align: center;
-    object-fit: cover;
-}
-img[src="/assets/images/hand.webp"]+img[src^="/pp/"], img[src="/assets/images/hand.webp"]+img[src$="/pic"] {
-	border-radius: 50%;
-}
 img[src="/assets/images/hand.webp"] {
     position: absolute;
     width: 90%;
     height: 90%;
     margin-top: -10%;
     z-index: 1;
+}
+img[src="/assets/images/hand.webp"]+img {
+    animation: pat-pfp-anim 0.3s infinite !important;
+    transform-origin: bottom center;
+    margin-top: 10%;
+    text-align: center;
+    object-fit: cover;
+	border-radius: 50%;
 }
 @keyframes pat-pfp-anim {
     0% { transform: scale(1, 0.8) }
