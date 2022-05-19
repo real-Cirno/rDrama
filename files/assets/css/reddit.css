@@ -71,3 +71,7 @@
 a.text-info, button.text-info {
     color: var(--sticky) !important
 }
+
+#frontpage .settings .d-lg-flex {
+    display: block !important;
+}
