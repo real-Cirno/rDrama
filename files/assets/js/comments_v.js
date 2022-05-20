@@ -301,7 +301,7 @@ document.onpaste = function(event) {
 				document.getElementById('filename-show-reply-' + fullname).textContent = filename;
 			}
 		}
-		catch(e) {console.log(e)}
+		catch(e) {}
 	}
 	else if (focused.id.includes('comment-edit-body-')) {
 		var id = focused.dataset.id;
