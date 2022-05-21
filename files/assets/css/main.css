@@ -4595,7 +4595,7 @@ input[type=radio] ~ .custom-control-label::before {
 	object-fit: contain;
 }
 
-span[alt$="pat:"] {
+span[alt$="pat:"], .pat-preview {
     position: relative;
     display: inline-block;
 }
