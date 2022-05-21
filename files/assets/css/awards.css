@@ -29,8 +29,8 @@
 }
 
 .ricardo img {
-    max-height: min(30vw,15rem) !important;
 	max-height: 15rem !important;
+    max-height: min(30vw,15rem) !important;
 }
 
 .ricardoleft {
