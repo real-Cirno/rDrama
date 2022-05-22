@@ -6,7 +6,7 @@ for (let firework of fireworks){
   counter++
   setTimeout(() => {
     setInterval(() => {
-      firework.firstElementChild.src = "/assets/images/firework-trail.gif"
+      firework.firstElementChild.src = "/assets/images/firework-trail.webp"
 
       var xpos = Math.floor(Math.random() * 80) + 5
       var ypos = 95
@@ -27,7 +27,7 @@ for (let firework of fireworks){
       function frame() {
         if (ypos <= height) {
           clearInterval(id);
-          firework.firstElementChild.src = "/assets/images/firework-explosion.gif?v="+vnum
+          firework.firstElementChild.src = "/assets/images/firework-explosion.webp?v="+vnum
         } else {
           ypos--; 
           firework.style.top=ypos+"%"
