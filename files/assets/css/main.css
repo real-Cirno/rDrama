@@ -5104,3 +5104,7 @@ th, td {
 .checkmark {
 	color: #1DA1F2 !important;
 }
+
+audio, video {
+	max-width: 100%;
+}
