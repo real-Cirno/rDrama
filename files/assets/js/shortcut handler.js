@@ -23,18 +23,18 @@ Copyright (C) 2022 Dr Steven Transmisia, anti-evil engineer
 document.addEventListener('keydown', (e) => {
 	if(!((e.ctrlKey || e.metaKey) && e.key === "Enter"))
 		return;
-	
+
 	/** @type {HTMLTextAreaElement} */
 	const targetDOM = document.activeElement;
-	if(!(targetDOM instanceof HTMLTextAreaElement) || !targetDOM.classList.contains("comment-box"))
+	if(!(targetDOM instanceof HTMLTextAreaElement))
 		return;
-	
+
 	/** @type {HTMLFormElement} */
 	const formDOM = targetDOM.parentElement;
 	if(!(formDOM instanceof HTMLFormElement))
 		throw new TypeError("the text area should be child of a FORM. Contact the head custodian immediately.");
 
-	const submitButtonDOMs = formDOM.getElementsByClassName("btn-primary");
+	const submitButtonDOMs = formDOM.querySelectorAll('input[type=submit]');
 	if(submitButtonDOMs.length === 0)
 		throw new TypeError("I am unable to find the submit button :(. Contact the head custodian immediately.")
 	
