@@ -34,7 +34,7 @@ document.addEventListener('keydown', (e) => {
 	if(!(formDOM instanceof HTMLFormElement))
 		throw new TypeError("the text area should be child of a FORM. Contact the head custodian immediately.");
 
-	const submitButtonDOMs = formDOM.querySelectorAll('input[type=submit]');
+	const submitButtonDOMs = formDOM.querySelectorAll('input[type=submit], .btn-primary');
 	if(submitButtonDOMs.length === 0)
 		throw new TypeError("I am unable to find the submit button :(. Contact the head custodian immediately.")
 	
