@@ -4977,7 +4977,7 @@ li > .sidebar > .rules {
 
 @media (max-width: 768px) {
 	.sorting {
-		padding-bottom: 1.5rem !important;
+		padding-bottom: 0.5rem !important;
 		padding-right: 0.5rem;
 	}
 }
