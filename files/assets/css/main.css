@@ -4769,6 +4769,12 @@ img.golden, img[g] {
 	text-align: center;
 	font-weight: bold;
 	white-space: nowrap;
+	font-size: 1.3rem;
+}
+@media (max-width: 768px) {
+	.srd {
+		font-size: 1rem;
+	}
 }
 .srd > a {
 	color: white;
