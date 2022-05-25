@@ -162,3 +162,17 @@ function checkRepost(t) {
 		xhr.send(form)
 	}
 }
+
+
+document.addEventListener('keydown', (e) => {
+   if(!((e.ctrlKey || e.metaKey) && e.key === "Enter"))
+	   return;
+
+   const targetDOM = document.activeElement;
+   if(!(targetDOM instanceof HTMLTextAreaElement))
+	   return;
+
+   const submitButton = document.getElementById('create_button')
+
+   submitButton.click();
+});
