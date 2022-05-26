@@ -16,6 +16,13 @@ if (window.location.pathname != '/submit')
 		if(submitButtonDOMs.length === 0)
 			throw new TypeError("I am unable to find the submit button :(. Contact the head custodian immediately.")
 		
-		submitButtonDOMs[0].click();
+		const btn = submitButtonDOMs[0]
+		btn.click();
+		btn.disabled = true;
+		btn.classList.add('disabled');
+		setTimeout(() => {
+			btn.disabled = false;
+			btn.classList.remove('disabled');
+		}, 2000);
 	});
 }
