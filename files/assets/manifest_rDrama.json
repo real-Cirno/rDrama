@@ -7,7 +7,7 @@
   "description": "rDrama",
   "icons": [
       {
-          "src": "/assets/images/rDrama/icon.webp",
+          "src": "/assets/images/rDrama/icon.png",
           "sizes": "512x512",
           "type": "image/png"
       }
