@@ -1,15 +1,20 @@
 {
-  "name": "rDrama",
-  "short_name": "rDrama",
-  "start_url": "https://rdrama.net",
-  "display": "standalone",
-  "background_color": "#FF66AC",
-  "description": "rDrama",
-  "icons": [
-      {
-          "src": "/assets/images/rDrama/icon.png",
-          "sizes": "512x512",
-          "type": "image/png"
-      }
-  ]
+	"name": "rDrama",
+	"short_name": "rDrama",
+	"start_url": "https://rdrama.net",
+	"display": "standalone",
+	"background_color": "#FF66AC",
+	"description": "rDrama",
+	"icons": [
+			{
+				"src": "/assets/images/rDrama/192.png?v=1",
+				"sizes": "192x192",
+				"type": "image/png"
+			},
+			{
+				"src": "/assets/images/rDrama/512.png?v=1",
+				"sizes": "512x512",
+				"type": "image/png"
+			}
+	]
 }
