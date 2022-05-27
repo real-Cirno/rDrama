@@ -1,7 +1,7 @@
-const reason = document.getElementById("reason")
+const reason_post = document.getElementById("reason_post")
 const reportPostButton = document.getElementById("reportPostButton");
 
-reason.addEventListener('keydown', (e) => {
+reason_post.addEventListener('keydown', (e) => {
 	if(!((e.ctrlKey || e.metaKey) && e.key === "Enter")) return;
 
 	const targetDOM = document.activeElement;
@@ -19,9 +19,9 @@ function report_postModal(id) {
 	reportPostButton.classList.remove('disabled');
 	reportPostButton.innerHTML='Report post';
 
-	reason.value = ""
+	reason_post.value = ""
 	setTimeout(() => {
-		reason.focus()
+		reason_post.focus()
 	}, 500);
 
 	reportPostButton.onclick = function() {
@@ -35,7 +35,7 @@ function report_postModal(id) {
 		xhr.setRequestHeader('xhr', 'xhr');
 		var form = new FormData()
 		form.append("formkey", formkey());
-		form.append("reason", reason.value);
+		form.append("reason_post", reason_post.value);
 
 		xhr.onload=function() {
 			document.getElementById("reportPostFormBefore").classList.add('d-none');
