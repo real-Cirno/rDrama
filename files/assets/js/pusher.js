@@ -1284,7 +1284,7 @@ var PusherPushNotifications = (function (exports) {
 	var INTERESTS_REGEX = new RegExp('^(_|\\-|=|@|,|\\.|;|[A-Z]|[a-z]|[0-9])*$');
 	var MAX_INTEREST_LENGTH = 164;
 	var MAX_INTERESTS_NUM = 5000;
-	var SERVICE_WORKER_URL = "/service-worker.js?pusherBeamsWebSDKVersion=".concat(version);
+	var SERVICE_WORKER_URL = "/worker.js?pusherBeamsWebSDKVersion=".concat(version);
 	var RegistrationState = Object.freeze({
 	  PERMISSION_PROMPT_REQUIRED: 'PERMISSION_PROMPT_REQUIRED',
 	  PERMISSION_GRANTED_NOT_REGISTERED_WITH_BEAMS: 'PERMISSION_GRANTED_NOT_REGISTERED_WITH_BEAMS',
@@ -2537,7 +2537,7 @@ var PusherPushNotifications = (function (exports) {
 				  break;
 				}
   
-				throw new Error('Cannot start SDK, service worker missing: No file found at /service-worker.js');
+				throw new Error('Cannot start SDK, service worker missing: No file found at /worker.js');
   
 			  case 6:
 				window.navigator.serviceWorker.register(SERVICE_WORKER_URL, {
