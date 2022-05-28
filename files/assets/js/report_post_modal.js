@@ -35,7 +35,7 @@ function report_postModal(id) {
 		xhr.setRequestHeader('xhr', 'xhr');
 		var form = new FormData()
 		form.append("formkey", formkey());
-		form.append("reason_post", reason_post.value);
+		form.append("reason", reason_post.value);
 
 		xhr.onload=function() {
 			document.getElementById("reportPostFormBefore").classList.add('d-none');
