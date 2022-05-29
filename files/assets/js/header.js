@@ -25,7 +25,7 @@ document.addEventListener('input', function (event) {
 document.addEventListener('scroll',function (event) {
     let nav = document.querySelector("nav");
     let i = (Math.min(20, window.scrollY/4)+1)/21;
-    nav.style.boxShadow="0px 2px "+i*21+"px rgba(15,15,15,"+i*.4+")";
+    nav.style.boxShadow="0px 2px "+i*21+"px rgba(15,15,15,"+i*.3+")";
     if (window.scrollY <= 0)
     {
 //        nav.classList.remove("shadow");

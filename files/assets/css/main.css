@@ -3101,6 +3101,16 @@ small, .small {
 .active.arrow-up::before {
 	color: var(--primary);
 }
+.active-anim.arrow-up
+{overflow: hidden;}
+.active-anim.arrow-up::before
+{
+    color: var(--primary);
+    animation: bounce-top-inset .7s 1 0s;
+    overflow: hidden;
+}
+
+
 .arrow-up::before {
 	cursor: pointer;
 	font-size: 1.3rem;
@@ -3110,9 +3120,89 @@ small, .small {
 	content: "\f357";
 }
 .arrow-up:hover::before {
-	color: var(--primary);
-	opacity: 0.5;
+	/* color: var(--primary); */
+	/* opacity: 0.5; */
 }
+.arrow-up, .arrow-down
+{
+    position: relative;
+}
+
+.arrow-up.active-anim
+{
+    animation: bounce-top .7s 1 0s;
+}
+
+.arrow-down.active-anim
+{
+    animation: bounce-bot .7s 1 0s;
+}
+
+@keyframes upmarsey
+{
+    0% { top: -15px; }
+    100% { top: 0px; }
+}
+
+
+@keyframes bounce-top {
+    20% {
+        transform: translateY(-9px);
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+    52% {
+        transform: translateY(-6px);
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+    69% {
+        transform: translateY(-3px);
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+    35%,
+    63%,
+    79%,
+    100% {
+        transform: translateY(0px);
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes bounce-bot {
+    30% {
+        transform: translateY(6px);
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+    52% {
+        transform: translateY(3px);
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+    69% {
+        transform: translateY(2px);
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0px);
+        animation-timing-function: ease-out;
+    }
+}
+
+.comment-write.collapsed
+{
+    animation: expand-reply .3s 1;
+}
+
+@keyframes expand-reply
+{
+    0% { opacity: .6; padding-top: 0px; height: 0px; overflow: hidden; }
+    100% { opacity: 1;padding-top: 0px; height: 182px; overflow: hidden; }
+}
+
 .active.arrow-down::before {
 	color: #38B2AC;
 }
@@ -3123,10 +3213,6 @@ small, .small {
 	font-family: "font awesome 5 pro" !important;
 	font-weight: 900;
 	content: "\f354";
-}
-.arrow-down:hover::before {
-	color: #38B2AC;
-	opacity: 0.5;
 }
 .comment-actions .arrow-up {
 	top: 0;
@@ -3155,6 +3241,25 @@ small, .small {
 	color: #38B2AC !important;
 	font-size: 1.1rem;
 }
+
+@keyframes bounce-top-inset {
+    0%
+    {
+        color: var(--gray-200);
+    }
+    40%
+    {
+        color: var(--gray-200);
+    }
+    41%
+    {
+        color: var(--primary);
+    }
+    
+    
+}
+
+
 .box-shadow-bottom {
 	box-shadow: inset 0 -0.1px 0 var(--gray-400);
 }
@@ -4406,10 +4511,6 @@ div.deleted.banned {
 .text-info {
 	color: var(--primary) !important;
 }
-* {
-	-webkit-animation: None !important;
-	animation: None !important;
-}
 .patron {
 	padding: 2px 5px 3px 5px !important;
 	border-radius: 5px !important;
@@ -4647,7 +4748,7 @@ img[src="/assets/images/hand.webp"] {
     z-index: 1;
 }
 img[src="/assets/images/hand.webp"]+img {
-    animation: pat-pfp-anim 0.3s infinite !important;
+    animation: pat-pfp-anim 0.3s infinite;
     transform-origin: bottom center;
     margin-top: 10%;
     text-align: center;
