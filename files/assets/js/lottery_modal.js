@@ -10,13 +10,40 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 function purchaseLotteryTicket() {
-  const xhr = new XMLHttpRequest();
-  const url = `/lottery/buy`;
+  return handleLotteryRequest('buy', 'POST');
+}
 
-  xhr.open("POST", url);
-  xhr.setRequestHeader("xhr", "xhr");
-  xhr.onload = function () {
-    let response;
+function ensureIntent() {
+  return window.confirm('Are you sure you want to end the current lottery?');
+}
+
+function startLotterySession() {
+  if (ensureIntent()) {
+    return handleLotteryRequest('start', 'POST');
+  }
+}
+
+function endLotterySession() {
+  if (ensureIntent()) {
+    return handleLotteryRequest('end', 'POST');
+  }
+}
+
+function handleLotteryRequest(uri, method) {
+  const xhr = new XMLHttpRequest();
+  const url = `/lottery/${uri}`;
+  xhr.open(method, url)
+  xhr.onload = handleLotteryResponse.bind(null, xhr);
+
+  const form = new FormData();
+  form.append("formkey", formkey());
+
+  xhr.send(form);
+}
+
+function handleLotteryResponse(xhr) {
+  console.log({xhr: xhr.onload})
+  let response;
 
     try {
       response = JSON.parse(xhr.response);
@@ -45,10 +72,4 @@ function purchaseLotteryTicket() {
 
       bootstrap.Toast.getOrCreateInstance(toast).show();
     }
-  };
-
-  const form = new FormData();
-  form.append("formkey", formkey());
-
-  xhr.send(form);
 }
