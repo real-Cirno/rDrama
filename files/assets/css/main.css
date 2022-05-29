@@ -785,7 +785,7 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
     100% { opacity: 1.0; transform: scaleY(1.0); }
 }
 
-.dropdown-menu.show
+.dropdown-menu-right.show
 {
     transform-origin: top;
     animation: expand .20s  1 !important;
