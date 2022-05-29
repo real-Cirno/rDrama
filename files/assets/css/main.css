@@ -5114,3 +5114,5 @@ th, td {
 audio, video {
 	max-width: 100%;
 }
+
+.fa-manhole:before{content:"\e1d6"}.fad.fa-manhole:after{content:"\e1d6\e1d6"}
