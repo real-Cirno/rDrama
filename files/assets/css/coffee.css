@@ -101,3 +101,11 @@ blockquote {
 #frontpage .post-title a:visited, .visited {
 	color: #949494 !important;
 }
+
+
+.sidebar
+{
+    background-color: #e6dacc !important;
+    border-radius: 6px;
+    margin-top: 6px;
+}

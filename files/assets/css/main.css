@@ -3270,6 +3270,12 @@ small, .small {
     display: block;
 }
 
+.catalog .voting .arrow-up,
+.catalog .voting .arrow-down
+{
+    display: inline-block;
+}
+
 .voting .arrow-up,
 .voting .arrow-up
 {
@@ -5133,7 +5139,7 @@ li > .sidebar > .rules {
 
 .sidebar
 {
-    background-color: #191d22 !important;
+    background-color: #f6f6f6 !important;
     border-radius: 6px;
     margin-top: 6px;
 }

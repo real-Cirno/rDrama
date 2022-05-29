@@ -522,3 +522,10 @@ a.nav-link:hover {
 #frontpage .post-title a:visited, .visited {
 	color: #6e6e6e !important;
 }
+
+.sidebar
+{
+    background-color: #f3f3f3 !important;
+    border-radius: 0px;
+    margin-top: 5px;
+}
