@@ -788,7 +788,7 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
 .dropdown-menu-right.show
 {
     transform-origin: top;
-    animation: expand .20s  1 !important;
+    animation: expand .20s 1;
 }
 
 
@@ -3101,14 +3101,13 @@ small, .small {
 .active.arrow-up::before {
 	color: var(--primary);
 }
-.active-anim.arrow-up
-{overflow: hidden;}
+
 .active-anim.arrow-up::before
 {
     color: var(--primary);
     animation: bounce-top-inset .7s 1 0s;
-    overflow: hidden;
 }
+
 
 
 .arrow-up::before {
@@ -3126,16 +3125,19 @@ small, .small {
 .arrow-up, .arrow-down
 {
     position: relative;
+    display: inline-block;
 }
 
 .arrow-up.active-anim
 {
     animation: bounce-top .7s 1 0s;
+    -webkit-animation: bounce-top .7s 1 0s;
 }
 
 .arrow-down.active-anim
 {
     animation: bounce-bot .7s 1 0s;
+    -webkit-animation: bounce-bot .7s 1 0s;
 }
 
 @keyframes upmarsey
@@ -3226,16 +3228,18 @@ small, .small {
 .downvoted .arrow-mobile-down {
 	color: #38B2AC !important;
 }
-.comment-actions .score {
-	color: var(--muted);
-}
 .score {
 	color: var(--black);
 	font-size: 1.1rem;
 }
 .score-up {
-	color: var(--primary) !important;
+	color: var(--primary);
 	font-size: 1.1rem;
+    
+}
+.score-up-anim
+{
+    animation: bounce-top-inset .7s 1 0s;
 }
 .score-down {
 	color: #38B2AC !important;
@@ -3259,6 +3263,17 @@ small, .small {
     
 }
 
+#voting .arrow-up,
+.voting .arrow-up,
+.voting .arrow-down
+{
+    display: block;
+}
+
+.voting .arrow-up,
+.voting .arrow-up
+{
+}
 
 .box-shadow-bottom {
 	box-shadow: inset 0 -0.1px 0 var(--gray-400);
@@ -4289,9 +4304,6 @@ pre .com, code .com {
 	.post-actions .voting .fa, .post-actions .voting .fas, .post-actions .voting .far {
 		font-size: 1.25rem;
 }
-	.comment-actions .score {
-		color: var(--gray-200);
-}
 	.score {
 		color: var(--gray-200);
 }
@@ -4326,9 +4338,6 @@ pre .com, code .com {
 }
 	.comment.collapsed .comment-body:hover {
 		opacity: 0.5;
-}
-	.comment-actions .fa, .comment-actions .fas, .comment-actions .far {
-		color: var(--gray-100);
 }
 	.banner-pic-135 {
 		max-width: 100%;
@@ -5124,7 +5133,9 @@ li > .sidebar > .rules {
 
 .sidebar
 {
-    
+    background-color: #191d22 !important;
+    border-radius: 6px;
+    margin-top: 6px;
 }
 
 

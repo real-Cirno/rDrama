@@ -39,15 +39,18 @@ function vote(type, id, dir, vid) {
 
 			if (upvote.classList.contains('active')) {
 				scoretext.classList.add('score-up')
+                scoretext.classList.add('score-up-anim')
 				scoretext.classList.remove('score-down')
 				scoretext.classList.remove('score')
 			} else if (downvote.classList.contains('active')) {
 				scoretext.classList.add('score-down')
 				scoretext.classList.remove('score-up')
+                scoretext.classList.remove('score-up-anim');
 				scoretext.classList.remove('score')
 			} else {
 				scoretext.classList.add('score')
 				scoretext.classList.remove('score-up')
+                scoretext.classList.remove('score-up-anim');
 				scoretext.classList.remove('score-down')
 			}
 		}
@@ -75,16 +78,19 @@ function vote(type, id, dir, vid) {
 
 			if (upvote.classList.contains('active')) {
 				scoretext.classList.add('score-up')
+                scoretext.classList.add('score-up-anim')
 				scoretext.classList.remove('score-down')
 				scoretext.classList.remove('score')
 			} else if (downvote.classList.contains('active')) {
 				scoretext.classList.add('score-down')
+                scoretext.classList.remove('score-up-anim')
 				scoretext.classList.remove('score-up')
 				scoretext.classList.remove('score')
 			} else {
 				scoretext.classList.add('score')
 				scoretext.classList.remove('score-up')
 				scoretext.classList.remove('score-down')
+                scoretext.classList.remove('score-up-anim')
 			}
 		}
 	}
