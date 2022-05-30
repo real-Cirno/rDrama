@@ -5459,3 +5459,15 @@ audio, video {
 	text-decoration: none;
 	color: var(--black);
 }
+
+#sidebar--counter--total, 
+#sidebar--counter--flavor, 
+#sidebar--counter--loggedin {
+	font-size: 1.1rem;
+}
+
+#sidebar--counter--admin {
+	display: block;
+	text-align: center;
+	font-size: 0.9rem;
+}
