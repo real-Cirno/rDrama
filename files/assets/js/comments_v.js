@@ -21,8 +21,8 @@ function post_toast3(t, url, button1, button2) {
 			document.getElementById('toast-post-success-text').innerText = data["message"];
 			bootstrap.Toast.getOrCreateInstance(document.getElementById('toast-post-success')).show();
 
-			document.getElementById(button1).classList.toggle("d-md-inline-block");
-			document.getElementById(button2).classList.toggle("d-md-inline-block");
+			document.getElementById(button1).classList.toggle("d-md-block");
+			document.getElementById(button2).classList.toggle("d-md-block");
 		
 		} else {
 			document.getElementById('toast-post-error-text').innerText = "Error, please try again later."
