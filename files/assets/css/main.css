@@ -4582,13 +4582,14 @@ input[type=radio] ~ .custom-control-label::before {
 	height: 60px;
 	width: 60px;
 }
+.bigemoji, .emoji-lg, img[alt^=":#"] {
+	height: 150px;
+	width: 150px;
+}
 .emj, .emoji, .bigemoji, .emoji-md, .emoji-lg, img[alt^=":"]
 {	
 	max-width: 150px !important;
 	max-height: 150px !important;
-}
-.emj, .emoji, .bigemoji, .emoji-md, .emoji-lg, img[alt^=":"]
-{	
 	max-width: min(150px,25vw) !important;
 	max-height: min(150px,25vw) !important;
 	display: inline-block;
