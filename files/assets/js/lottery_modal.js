@@ -23,7 +23,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     setTimeout(() => {
       document.getElementById("lotteryTicketPulled").style.display = "none";
-    }, 1600);
+    }, 3600);
   });
 });
 

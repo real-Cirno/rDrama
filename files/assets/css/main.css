@@ -5315,11 +5315,11 @@ audio, video {
 
 .lottery-modal--wrapper > div {
 	height: 400px;
-	min-width: 400px;
+	width: 400px;
 }
 
 .lottery-modal--image {
-	width: 400px;
+	max-width: 400px;
 	height: 400px;
 	margin-right: 1rem;
 	margin-bottom: 0;
@@ -5406,3 +5406,46 @@ audio, video {
 		min-width: 440px !important;
 	}
 }
+
+@media screen and (max-width: 464px) {
+	.lottery-modal--image {
+		margin-right: 0;
+		margin-bottom: 2rem;
+	}
+
+	.lottery-modal--content {
+		width: 440px;
+		min-width: 0;
+	}
+
+	.lottery-modal--wrapper {
+		flex-direction: column;
+		justify-content: center;
+	    padding: 2rem;
+	}
+
+    .lottery-modal--wrapper > div
+    {
+        width: 300px;
+        height: 300px;
+    }
+
+	.lottery-modal--action {
+		margin-bottom: 1rem;
+	}
+
+	.lottery-modal--stats {
+		margin-left: 0;
+		width: 300px;
+		flex-direction: column-reverse;
+	}
+
+	.lottery-modal--dialog {
+		min-width: 440px !important;
+	}
+    #lotteryModal .modal-dialog
+    {
+        min-width: 340px !important;
+    }
+}
+
