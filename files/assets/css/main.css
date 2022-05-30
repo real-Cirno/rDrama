@@ -3106,7 +3106,6 @@ small, .small {
 .active-anim.arrow-up::before
 {
     color: var(--primary);
-    animation: bounce-top-inset .7s 1 0s;
 }
 
 
@@ -3240,28 +3239,11 @@ small, .small {
 }
 .score-up-anim
 {
-    animation: bounce-top-inset .7s 1 0s;
+    color: var(--primary);
 }
 .score-down {
 	color: #38B2AC !important;
 	font-size: 1.1rem;
-}
-
-@keyframes bounce-top-inset {
-    0%
-    {
-        color: var(--gray-200);
-    }
-    40%
-    {
-        color: var(--gray-200);
-    }
-    41%
-    {
-        color: var(--primary);
-    }
-    
-    
 }
 
 #voting .arrow-up,
