@@ -1,6 +1,9 @@
 const CHECK_LOTTERY_RATE = 5000;
+let onCooldown = false;
 
 window.addEventListener("DOMContentLoaded", () => {
+  let ticketPulled = document.getElementById("lotteryTicketPulled");
+  let purchaseTicket = document.getElementById("purchaseTicket");
   // Request lottery information while the modal is open.
   const lotteryModal = document;
   lotteryModal.getElementById("lotteryModal");
@@ -18,12 +21,16 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   // Show ticket being pulled.
-  document.getElementById("purchaseTicket").addEventListener("click", () => {
-    document.getElementById("lotteryTicketPulled").style.display = "block";
+  purchaseTicket.addEventListener("click", e => {
+    onCooldown = true;
+    ticketPulled.style.display = "block";
 
     setTimeout(() => {
-      document.getElementById("lotteryTicketPulled").style.display = "none";
-    }, 1600);
+        onCooldown = false;
+        ticketPulled.style.display = "none";
+        ticketPulled.src = "/assets/images/rDrama/lottery_modal_active.webp?v=2&t="+new Date().getTime();
+        purchaseTicket.disabled = false;
+    }, 1780);
   });
 });
 
@@ -151,14 +158,11 @@ function handleLotteryResponse(xhr, method) {
 
       ticketsSoldThisSessionField.textContent = lottery.ticketsSoldThisSession;
       ticketsHeldCurrentField.textContent = user.ticketsHeld.current;
-      purchaseTicketButton.disabled = false;
+      purchaseTicketButton.disabled = onCooldown;
     } else {
       prizeImage.style.display = "none";
-      prizeField.textContent = "-";
-      timeLeftField.textContent = "-";
-      ticketsSoldThisSessionField.textContent = "-";
-      participantsThisSessionField.textContent = "-";
-      ticketsHeldCurrentField.textContent = "-";
+      [prizeField, timeLeftField, ticketsSoldThisSessionField, participantsThisSessionField, ticketsHeldCurrentField]
+        .forEach(e => e.textContent = "-");
       purchaseTicketButton.disabled = true;
     }
 

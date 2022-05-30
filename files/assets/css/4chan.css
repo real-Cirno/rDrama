@@ -149,3 +149,10 @@ blockquote a {
 #frontpage .post-title a:visited, .visited {
 	color: #949494 !important;
 }
+
+.sidebar
+{
+    background-color: unset !important;
+    border-radius: 6px;
+    margin-top: 6px;
+}

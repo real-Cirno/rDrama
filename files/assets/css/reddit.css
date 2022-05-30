@@ -75,3 +75,11 @@ a.text-info, button.text-info {
 #frontpage .settings .d-lg-flex {
     display: block !important;
 }
+
+
+.sidebar
+{
+    background-color: unset !important;
+    border-radius: 6px;
+    margin-top: 6px;
+}
