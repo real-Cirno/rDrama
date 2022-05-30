@@ -15,8 +15,8 @@
 	--background: #2d3c50;
 }
 
-body, .container.transparent, .card {
-	background-color: var(--gray-800) !important
+.container.transparent, .card {
+	background-color: var(--gray-800);
 }
 
 .navbar-light {
@@ -136,4 +136,9 @@ color: var(--gray-700);
 
 #frontpage .post-title a:visited, .visited {
 	color: #6e6e6e !important;
+}
+
+.post-title
+{
+    color: var(--gray-300) !important;
 }
