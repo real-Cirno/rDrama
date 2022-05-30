@@ -3277,10 +3277,6 @@ small, .small {
     display: inline-block;
 }
 
-.voting .arrow-up,
-.voting .arrow-up
-{
-}
 
 .box-shadow-bottom {
 	box-shadow: inset 0 -0.1px 0 var(--gray-400);
@@ -4311,14 +4307,18 @@ pre .com, code .com {
 	.post-actions .voting .fa, .post-actions .voting .fas, .post-actions .voting .far {
 		font-size: 1.25rem;
 }
-	.score {
-		color: var(--gray-200);
-}
 	.arrow-up::before, .arrow-down::before, .arrow-up:hover::before, .arrow-down:hover::before {
 		font-size: 1.5rem;
 		color: var(--gray-200);
 		opacity: 1;
-}
+    }
+    #voting .arrow-up,
+    .voting .arrow-up,
+    .voting .arrow-down
+    {
+        display: inline-block;
+    }
+
 	.active.arrow-up::before, .active.arrow-up:hover::before {
 		color: var(--primary);
 }
