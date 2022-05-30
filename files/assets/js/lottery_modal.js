@@ -161,11 +161,8 @@ function handleLotteryResponse(xhr, method) {
       purchaseTicketButton.disabled = onCooldown;
     } else {
       prizeImage.style.display = "none";
-      prizeField.textContent = "-";
-      timeLeftField.textContent = "-";
-      ticketsSoldThisSessionField.textContent = "-";
-      participantsThisSessionField.textContent = "-";
-      ticketsHeldCurrentField.textContent = "-";
+      [prizeField, timeLeftField, ticketsSoldThisSessionField, participantsThisSessionField, ticketsHeldCurrentField]
+        .forEach(e => e.textContent = "-");
       purchaseTicketButton.disabled = true;
     }
 

@@ -36,7 +36,6 @@ function smoothScrollTop()
     for (let i of toplisteners)
     {
         i.addEventListener('click', (e) => {
-            console.log(e);
             if (e.target.id === "navbar" ||
                 e.target.classList.contains("container-fluid") ||
                 e.target.id == "navbarResponsive" ||
