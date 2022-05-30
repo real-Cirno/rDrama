@@ -4540,7 +4540,7 @@ video {
 .text-removed {
 	color: #ffabab !important;
 }
-.mirrored, img[alt^=":!"], img[alt^=":#!"], span[alt^=":!"] {
+.mirrored, img[alt^=":!"], img[alt^=":#!"] {
 	transform: scaleX(-1);
 	-webkit-transform: scaleX(-1);
 }
@@ -4582,7 +4582,7 @@ input[type=radio] ~ .custom-control-label::before {
 	height: 60px;
 	width: 60px;
 }
-.bigemoji, .emoji-lg, img[alt^=":#"] {
+.bigemoji, .emoji-lg, img[alt^=":#"], img[alt^=":!#"] {
 	height: 150px;
 	width: 150px;
 }
