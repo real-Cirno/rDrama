@@ -4167,10 +4167,15 @@ pre .com, code .com {
 }
 }
 
-#expandImageModal
+.modal-content
 {
-    backdrop-filter: blur(16px);
-    background-color: rgba(33, 38, 45, .1);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid #00000040;
+}
+.modal-backdrop.show
+{
+    backdrop-filter: blur(16px) contrast(1.2);
+    background-color: rgba(33, 38, 45, .8);
 }
 
 @media (max-width: 767.98px) {
