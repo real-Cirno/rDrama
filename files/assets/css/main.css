@@ -5306,10 +5306,6 @@ audio, video {
 	height: 100%;
 }
 
-.lottery-page--stat {
-	margin-bottom: 1rem;
-}
-
 .lottery-page--action {
 	border-width: 2px;
 	font-size: 1.4rem;
@@ -5329,16 +5325,17 @@ audio, video {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background-color: #32383e;
-	border: 1px solid #fff;
+	background-color: var(--gray);
+	border: 1px solid var(--black);
 	border-radius: 8px;
 	padding: 1rem;
+	margin-bottom: 1rem;
 }
 
 .lottery-page--stat-keys {
-	color: #ffb2d4;
+	color: var(--black);
 	font-variant: small-caps;
-	font-weight: 400;
+	font-weight: bold;
 }
 
 .lottery-page--stat-values {
