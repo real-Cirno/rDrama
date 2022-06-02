@@ -656,7 +656,7 @@
 	{"name":"russia","class":"Flags"},
 	{"name":"niger","class":"Flags"},
 	{"name":"lgbt","class":"Flags"},
-	{"name":"pride2022","class":"Flags"}
+	{"name":"pride2022","class":"Flags"},
 	{"name":"animesexual","class":"Flags"},
 	{"name":"blacknation","class":"Flags"},
 	{"name":"blm","class":"Flags"},
@@ -722,5 +722,5 @@
 	{"name":"gigachad2", "tags": ["chad"], "class":"Misc"},
 	{"name":"gigachad3", "tags": ["chad"], "class":"Misc"},
 	{"name":"kippy","class":"Misc"},
-	{"name":"onerat","class":"Misc"},
+	{"name":"onerat","class":"Misc"}
 ]
