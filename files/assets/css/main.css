@@ -5283,7 +5283,6 @@ audio, video {
 }
 
 .lottery-page--wrapper > div {
-	height: 400px;
 	width: 400px;
 }
 
@@ -5341,6 +5340,7 @@ audio, video {
 .lottery-page--stat-values {
 	text-align: right;
 }
+
 
 @media screen and (max-width: 1680px) {
 	.lottery-page--image {
