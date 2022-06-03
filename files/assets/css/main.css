@@ -4941,6 +4941,8 @@ img.golden, img[g] {
 
 .fa-box-open:before{content:"\f49e"}
 .fa-hexagon:before{content:"\f312"}
+.fa-arrow-right-arrow-left:before{content:"\f0ec"}
+.fa-coins:before{content:"\f51e"}
 
 .awards-wrapper input[type="radio"] {
 	display: none;
@@ -5413,7 +5415,7 @@ audio, video {
 
 .sidebar-link {
 	display: inline;
-	padding: 0rem 0.85rem 1rem 0.85rem;
+	padding: 0rem 0.60rem 1rem 0.60rem;
 	font-size: 1rem;
 	color: var(--black);
 }
