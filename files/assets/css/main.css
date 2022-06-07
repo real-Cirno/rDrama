@@ -4159,7 +4159,6 @@ pre .com, code .com {
 }
 .modal-backdrop.show
 {
-    backdrop-filter: blur(16px) contrast(1.2);
     background-color: rgba(33, 38, 45, .8);
 }
 
