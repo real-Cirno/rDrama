@@ -729,6 +729,7 @@ a.btn.disabled, fieldset:disabled a.btn {
 	line-height: 1.5;
 	border-radius: 0.3rem;
 }
+
 .btn-block {
 	display: block;
 	width: 100%;
@@ -739,6 +740,18 @@ a.btn.disabled, fieldset:disabled a.btn {
 input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].btn-block {
 	width: 100%;
 }
+
+.btn-follow {
+	display: block;
+	width: 100%;
+}
+.btn-follow + .btn-follow {
+	margin-top: 0.5rem;
+}
+input[type=submit].btn-follow, input[type=reset].btn-follow, input[type=button].btn-follow {
+	width: 100%;
+}
+
 .fade {
 	transition: opacity 0.15s linear;
 }
