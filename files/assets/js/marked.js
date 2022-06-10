@@ -2,6 +2,7 @@
 
 function markdown(first, second) {
 	var input = document.getElementById(first).value;
+	input = input.replace(/\n/g, '\n\n')
 	input = input.replace(/\|\|(.*?)\|\|/g, '<span class="spoiler">$1</span>')
 	
 	var emojis = Array.from(input.matchAll(/:([^:\s]{1,31}):/gi))
