@@ -105,7 +105,7 @@ function getSelectionTextHtml() {
 function openReplyBox(id) {
 	const element = document.getElementById(id);
 	const textarea = element.getElementsByTagName('textarea')[0]
-	let text = getSelection().toString()
+	let text = getSelection().toString().trim()
 	if (text)
 	{
 		textarea.value = '>' + text
