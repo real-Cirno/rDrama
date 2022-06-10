@@ -103,7 +103,7 @@ function quote(t) {
 	let username
 	try {username = t.parentElement.previousElementSibling.innerHTML}
 	catch(e) {username = t.parentElement.parentElement.previousElementSibling.innerHTML}
-	textbox.value = '> ' + text + '\n\n@' + username + ' '
+	textbox.value = '> ' + text + '\n@' + username + ' '
 	textbox.focus()
 	autoExpand(textbox);
 }
