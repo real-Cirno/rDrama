@@ -4589,7 +4589,7 @@ textarea {
 }
 @media (min-width: 992px) {
 	.card-columns {
-		column-count: 8 !important;
+		column-count: 6 !important;
 }
 }
 .container, .container-fluid {
