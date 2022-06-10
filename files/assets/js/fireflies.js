@@ -1,7 +1,9 @@
-new BugController({
-	imageSprite: "/assets/images/fireflies.webp",
-	canDie: false,
-	minBugs: 10,
-	maxBugs: 30,
-	mouseOver: "multiply"
-});
+if (navigator.deviceMemory >= 4) {
+	new BugController({
+		imageSprite: "/assets/images/fireflies.webp",
+		canDie: false,
+		minBugs: 10,
+		maxBugs: 30,
+		mouseOver: "multiply"
+	});
+}

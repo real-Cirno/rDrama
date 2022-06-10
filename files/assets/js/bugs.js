@@ -1,7 +1,9 @@
-new BugController({
-	imageSprite: "/assets/images/fly-sprite.webp",
-	canDie: false,
-	minBugs: 10,
-	maxBugs: 20,
-	mouseOver: "multiply"
-});
+if (navigator.deviceMemory >= 4) {
+	new BugController({
+		imageSprite: "/assets/images/fly-sprite.webp",
+		canDie: false,
+		minBugs: 10,
+		maxBugs: 20,
+		mouseOver: "multiply"
+	});
+}
