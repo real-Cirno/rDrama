@@ -70,13 +70,11 @@ async function getGif(searchTerm) {
 
 function insertGIF(url,form) {
 
-	var gif = "\n![](" + url +")";
+	const commentBox = document.getElementById(form);
+	const old = commentBox.value;
 
-	var commentBox = document.getElementById(form);
-
-	var old	= commentBox.value;
-
-	commentBox.value = old + gif;
+	if (old) commentBox.value = `${old}\n${url}`;
+	else commentBox.value = url
 
 	if (typeof checkForRequired === "function") checkForRequired();
 }
