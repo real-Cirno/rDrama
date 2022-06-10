@@ -2894,9 +2894,11 @@ ol > li::before {
 }
 .settings-nav .nav-link {
 	color: var(--gray-200);
-	font-size: 1rem;
 	font-weight: 400;
 	padding: 0.75rem 1rem;
+}
+.settings-nav .nav-item {
+	font-size: 1rem;
 }
 .post-nav > .nav-item > .nav-link.active {
 	color: var(--primary);
@@ -4471,9 +4473,12 @@ div.deleted.banned {
 }
 @media (max-width: 767.98px) {
 	.settings-nav .nav-link {
-		font-size: 1rem;
 		padding: 0.75rem 0.6rem;
-}
+	}
+	.settings-nav .nav-item:first-child:nth-last-child(6),
+	.settings-nav .nav-item:first-child:nth-last-child(6) ~ li {
+		font-size: 0.80rem;
+	}
 }
 .table {
 	color: var(--white);
@@ -5232,7 +5237,7 @@ th, td {
 	.mobile-nav-icon {
 		padding: 0.25rem 0.5rem;
 	}
-	.settings-nav .nav-link {
+	.settings-nav .nav-item {
 		font-size: 12px;
 	}
 }
