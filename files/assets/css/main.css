@@ -3606,7 +3606,7 @@ small, .small {
 	margin-right: 0;
 }
 .page-link {
-	font-weight: 600;
+	font-weight: 900;
 	background-color: var(--dark);
 	border: 0.1px solid #343a40;
 }
