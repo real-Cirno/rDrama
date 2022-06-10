@@ -291,7 +291,10 @@ document.onpaste = function(event) {
 		f=document.getElementById('file-upload-reply-' + fullname);
 		files = event.clipboardData.files
 		try {
-			filename = files[0].name.toLowerCase()
+			let filename = ''
+			for (const file of files)
+				filename += file.name + ', '
+			filename = filename.toLowerCase().slice(0, -2)
 			if (filename.endsWith(".jpg") || filename.endsWith(".jpeg") || filename.endsWith(".png") || filename.endsWith(".webp") || filename.endsWith(".gif"))
 			{
 				f.files = files;
@@ -304,7 +307,10 @@ document.onpaste = function(event) {
 		var id = focused.dataset.id;
 		f=document.getElementById('file-edit-reply-' + id);
 		files = event.clipboardData.files
-		filename = files[0].name.toLowerCase()
+		let filename = ''
+		for (const file of files)
+			filename += file.name + ', '
+		filename = filename.toLowerCase().slice(0, -2)
 		if (filename.endsWith(".jpg") || filename.endsWith(".jpeg") || filename.endsWith(".png") || filename.endsWith(".webp") || filename.endsWith(".gif"))
 		{
 			f.files = files;
@@ -315,7 +321,10 @@ document.onpaste = function(event) {
 		var id = focused.dataset.id;
 		f=document.getElementById('file-upload-edit-' + id);
 		files = event.clipboardData.files
-		filename = files[0].name.toLowerCase()
+		let filename = ''
+		for (const file of files)
+			filename += file.name + ', '
+		filename = filename.toLowerCase().slice(0, -2)
 		if (filename.endsWith(".jpg") || filename.endsWith(".jpeg") || filename.endsWith(".png") || filename.endsWith(".webp") || filename.endsWith(".gif"))
 		{
 			f.files = files;

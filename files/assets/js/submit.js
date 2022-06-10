@@ -56,6 +56,10 @@ document.onpaste = function(event) {
 		if (filename.endsWith(".jpg") || filename.endsWith(".jpeg") || filename.endsWith(".png") || filename.endsWith(".webp") || filename.endsWith(".gif"))
 		{
 			if (document.activeElement.id == 'post-text') {
+				let filename = ''
+				for (const file of files)
+					filename += file.name + ', '
+				filename = filename.toLowerCase().slice(0, -2)
 				document.getElementById('file-upload-submit').files = files;
 				document.getElementById('filename-show-submit').textContent = filename;
 			}

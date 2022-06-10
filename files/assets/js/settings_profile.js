@@ -89,7 +89,10 @@ document.onpaste = function(event) {
 	if (focused.id == 'bio-text') {
 		f=document.getElementById('file-upload');
 		files = event.clipboardData.files
-		filename = files[0].name.toLowerCase()
+		let filename = ''
+		for (const file of files)
+			filename += file.name + ', '
+		filename = filename.toLowerCase().slice(0, -2)
 		if (filename.endsWith(".jpg") || filename.endsWith(".jpeg") || filename.endsWith(".png") || filename.endsWith(".webp") || filename.endsWith(".gif"))
 		{
 			f.files = files;
