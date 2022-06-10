@@ -105,29 +105,11 @@ function getSelectionTextHtml() {
 function openReplyBox(id) {
 	const element = document.getElementById(id);
 	const textarea = element.getElementsByTagName('textarea')[0]
-	let text = getSelectionTextHtml()
-  		
+	let text = getSelection().toString()
 	if (text)
 	{
-		textarea.value = '>' + text.replace(/\n<img /g,"<img ")
-			.replace(/<ul>|<\/ul>|<ol>|<\/ol>/g,"")
-			.replace(/<li>/g,"- ")
-			.replace(/<\/li>/g,"\n>")
-			.replace(/<img.*?alt=\"(.*?)\".*?>\n/g,"$1\r\n>") // Emojis with newline
-			.replace(/<img.*?alt=\"(.*?)\".*?>/g,"$1") // Emojis
-			.replace(/\n<p>/g,"")
-			.replace(/<p>/g,"")
-			.replace(/<\/p>/g,"\n>")
-			.replace(/\*/g,"\\*")
-			.replace(/\*\*/g,"\\*\\*")
-			.replace(/\_/g,"\\_")
-			.replace(/\~\~/g,"\\~\\~")
-			.replace(/<i>|<\/i>|<em>|<\/em>/g,"*")
-			.replace(/<b>|<\/b>|<strong>|<\/strong>/g,"**")
-			.replace(/<u>|<\/u>/g,"_")
-			.replace(/<strike>|<\/strike>/g,"~~")
-			.replace(/\n>$/g,"")
-			.replace(/\n\n([^$])/g,"\n\n>$1")
+		textarea.value = '>' + text
+		textarea.value = textarea.value.replace(/\n\n([^$])/g,"\n\n>$1")
 		if (!textarea.value.endsWith('\n\n')) textarea.value += '\n\n'
 	}
 	element.classList.remove('d-none')
