@@ -4755,7 +4755,7 @@ input[type=radio] ~ .custom-control-label::before {
 	width: 150px;
 }
 .emj, .emoji, .bigemoji, .emoji-md, .emoji-lg, img[alt^=":"]
-{	
+{
 	max-width: 150px !important;
 	max-height: 150px !important;
 	max-width: min(150px,25vw) !important;
