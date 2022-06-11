@@ -295,11 +295,8 @@ document.onpaste = function(event) {
 			for (const file of files)
 				filename += file.name + ', '
 			filename = filename.toLowerCase().slice(0, -2)
-			if (filename.endsWith(".jpg") || filename.endsWith(".jpeg") || filename.endsWith(".png") || filename.endsWith(".webp") || filename.endsWith(".gif"))
-			{
-				f.files = files;
-				document.getElementById('filename-show-reply-' + fullname).textContent = filename;
-			}
+			f.files = files;
+			document.getElementById('filename-show-reply-' + fullname).textContent = filename;
 		}
 		catch(e) {}
 	}
@@ -311,11 +308,8 @@ document.onpaste = function(event) {
 		for (const file of files)
 			filename += file.name + ', '
 		filename = filename.toLowerCase().slice(0, -2)
-		if (filename.endsWith(".jpg") || filename.endsWith(".jpeg") || filename.endsWith(".png") || filename.endsWith(".webp") || filename.endsWith(".gif"))
-		{
-			f.files = files;
-			document.getElementById('filename-edit-reply-' + id).textContent = filename;
-		}
+		f.files = files;
+		document.getElementById('filename-edit-reply-' + id).textContent = filename;
 	}
 	else if (focused.id.includes('post-edit-box-')) {
 		var id = focused.dataset.id;
@@ -325,11 +319,8 @@ document.onpaste = function(event) {
 		for (const file of files)
 			filename += file.name + ', '
 		filename = filename.toLowerCase().slice(0, -2)
-		if (filename.endsWith(".jpg") || filename.endsWith(".jpeg") || filename.endsWith(".png") || filename.endsWith(".webp") || filename.endsWith(".gif"))
-		{
-			f.files = files;
-			document.getElementById('filename-show-edit-' + id).textContent = filename;
-		}
+		f.files = files;
+		document.getElementById('filename-show-edit-' + id).textContent = filename;
 	}
 }
 
