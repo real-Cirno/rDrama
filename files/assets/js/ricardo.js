@@ -1,4 +1,4 @@
-if (navigator.deviceMemory >= 4) {
+if (!(navigator.deviceMemory < 3)) {
 	var isleft = true
 	setInterval(() => {
 		let ricardo1 = document.getElementById("ricardo1")

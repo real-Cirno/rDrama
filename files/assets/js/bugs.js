@@ -1,4 +1,4 @@
-if (navigator.deviceMemory >= 4) {
+if (!(navigator.deviceMemory < 3)) {
 	new BugController({
 		imageSprite: "/assets/images/fly-sprite.webp",
 		canDie: false,
