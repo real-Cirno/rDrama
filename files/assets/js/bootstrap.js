@@ -6,7 +6,7 @@ if (window.location.pathname != '/submit')
 		if(!((e.ctrlKey || e.metaKey) && e.key === "Enter")) return;
 
 		const targetDOM = document.activeElement;
-		if(!(targetDOM instanceof HTMLTextAreaElement)) return;
+		if(!(targetDOM instanceof HTMLTextAreaElement || targetDOM instanceof HTMLInputElement)) return;
 
 		const formDOM = targetDOM.parentElement;
 		if(!(formDOM instanceof HTMLFormElement))
