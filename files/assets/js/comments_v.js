@@ -92,14 +92,14 @@ function report_commentModal(id, author) {
 
 // Returns the selection text based on the range with the HTML
 function getSelectionTextHtml() {
-    let html = "";
-    let sel = getSelection();
-    if (sel.rangeCount) {
-        let container = document.createElement("div");
-        container.appendChild(sel.getRangeAt(0).cloneContents());
-        html += container.innerHTML;
-    }
-    return html;
+	let html = "";
+	let sel = getSelection();
+	if (sel.rangeCount) {
+		let container = document.createElement("div");
+		container.appendChild(sel.getRangeAt(0).cloneContents());
+		html += container.innerHTML;
+	}
+	return html;
 }
 
 function openReplyBox(id) {
