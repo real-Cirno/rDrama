@@ -5284,6 +5284,13 @@ th, td {
     transform: translate(-70px,-22px);
 }
 
+.party-hat4 {
+    cursor: pointer;
+    height: 30px;
+    position: absolute;
+    transform: translate(-40px,-20px);
+}
+
 .checkmark {
 	color: #1DA1F2 !important;
 }
