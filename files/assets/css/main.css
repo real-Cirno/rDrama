@@ -2,6 +2,10 @@
 *, *::before, *::after {
 	box-sizing: border-box;
 }
+img {
+	max-width: 100%;
+	max-height: 90vh;
+}
 html {
 	font-family: sans-serif;
 	line-height: 1.15;
@@ -5459,8 +5463,3 @@ audio, video {
 .fa-arrow-right-arrow-left:before{content:"\f0ec"}
 .fa-coins:before{content:"\f51e"}
 .fa-bell-slash:before{content:"\f1f6"}
-
-img {
-	max-width: 100% !important;
-	max-height: 90vh !important;
-}
