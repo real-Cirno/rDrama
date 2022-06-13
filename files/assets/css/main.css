@@ -270,9 +270,7 @@ mark, .mark {
 	font-size: 1.25rem;
 }
 .img-fluid {
-	max-width: 100%;
 	height: auto;
-	max-height:100vh;
 }
 .img-thumbnail {
 	padding: 0.25rem;
@@ -5461,3 +5459,8 @@ audio, video {
 .fa-arrow-right-arrow-left:before{content:"\f0ec"}
 .fa-coins:before{content:"\f51e"}
 .fa-bell-slash:before{content:"\f1f6"}
+
+img {
+	max-width: 100% !important;
+	max-height: 90vh !important;
+}
