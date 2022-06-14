@@ -39,6 +39,8 @@
 	{"name":"space","class":"Marsey Alphabet"},
 	{"name":"period","class":"Marsey Alphabet", "tags": ["."]},
 	{"name":"questionmark","class":"Marsey Alphabet" , "tags": ["?"]},
+	{"name":"equals","class":"Marsey Alphabet", "tags": ["="]},
+	{"name":"plus","class":"Marsey Alphabet", "tags": ["+"]},
 
 	{"name":"marseyflagarmenia","class":"Marsey Flags"},
 	{"name":"marseyflagelsalvador","class":"Marsey Flags"},
