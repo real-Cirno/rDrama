@@ -601,6 +601,7 @@
 	{"name":"chadno","tags": ["no", "negative"],"class":"Wojak"},
 	{"name":"abusivewife","tags": ["bardfinn"],"class":"Wojak"},
 	{"name":"ancap","tags": ["pedo", "lib"],"class":"Wojak"},
+	{"name":"klanjak","class":"Wojak"},
 	{"name":"bardfinn","class":"Wojak"},
 	{"name":"bloomer","class":"Wojak"},
 	{"name":"boomer","class":"Wojak"},
@@ -674,6 +675,12 @@
 	{"name":"transracial","class":"Flags"},
 	{"name":"usa","tags": ["america"],"class":"Flags"},
 
+	{"name":"sharkybodybuilder","class":"Users"},
+	{"name":"sharkyglow","class":"Users"},
+	{"name":"sharkylove","class":"Users"},
+	{"name":"sharkysad","class":"Users"},
+	{"name":"sharkythink","class":"Users"},
+
 	{"name":"chadyescapy", "tags":["capy", "aevann"],"class":"Misc"},
 	{"name":"chadnocapy", "tags":["capy", "aevann"],"class":"Misc"},
 	{"name":"capygitcommit", "tags":["capy", "aevann"],"class":"Misc"},
@@ -690,6 +697,10 @@
 	{"name":"chadsneedcapy", "tags":["capy", "aevann"],"class":"Misc"},
 	{"name":"chadthankskingcapy", "tags":["capy", "aevann"],"class":"Misc"},
 	{"name":"chadthanksqueencapy", "tags":["capy", "aevann"],"class":"Misc"},
+	{"name":"chadstevejobs","class":"Misc"},
+	{"name":"breadmarsey","class":"Misc"},
+	{"name":"breadcapy","class":"Misc"},
+	{"name":"sharkmarsey","class":"Misc"},
 	{"name":"gimp","class":"Misc"},
 	{"name":"sher","class":"Misc"},
 	{"name":"xdoubt","class":"Misc"},
@@ -722,5 +733,6 @@
 	{"name":"gigachad2", "tags": ["chad"], "class":"Misc"},
 	{"name":"gigachad3", "tags": ["chad"], "class":"Misc"},
 	{"name":"kippy","class":"Misc"},
-	{"name":"onerat","class":"Misc"}
+	{"name":"onerat","class":"Misc"},
+	{"name":"gunt","class":"Misc"}
 ]
