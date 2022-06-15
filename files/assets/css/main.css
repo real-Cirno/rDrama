@@ -5543,5 +5543,11 @@ audio, video {
 .fa-panorama:before{content:"\e209"}
 
 .gif-categories {
-	column-count: 4
+	column-count: 4 !important
+}
+
+@media (min-width: 768px) {
+	.gif-categories {
+		column-count: 2 !important
+	}
 }
