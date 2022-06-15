@@ -39,6 +39,8 @@
 	{"name":"space","class":"Marsey Alphabet"},
 	{"name":"period","class":"Marsey Alphabet", "tags": ["."]},
 	{"name":"questionmark","class":"Marsey Alphabet" , "tags": ["?"]},
+	{"name":"equals","class":"Marsey Alphabet", "tags": ["="]},
+	{"name":"plus","class":"Marsey Alphabet", "tags": ["+"]},
 
 	{"name":"marseyflagarmenia","class":"Marsey Flags"},
 	{"name":"marseyflagelsalvador","class":"Marsey Flags"},
@@ -172,6 +174,7 @@
 	{"name":"platyseethe","class":"Platy","tags":["seethe"]},
 	{"name":"platythumbsup","class":"Platy","tags":["thumbsup"]},
 	{"name":"platywave","class":"Platy","tags":["wave"]},
+	{"name":"platykys","class":"Platy","tags":["kys", "killyourself", "keepyourselfsafe"]},
 
 	{"name":"wolfheart","class":"Wolf"},
 	{"name":"wombiezolf","class":"Wolf"},
@@ -601,6 +604,7 @@
 	{"name":"chadno","tags": ["no", "negative"],"class":"Wojak"},
 	{"name":"abusivewife","tags": ["bardfinn"],"class":"Wojak"},
 	{"name":"ancap","tags": ["pedo", "lib"],"class":"Wojak"},
+	{"name":"klanjak","class":"Wojak"},
 	{"name":"bardfinn","class":"Wojak"},
 	{"name":"bloomer","class":"Wojak"},
 	{"name":"boomer","class":"Wojak"},
@@ -674,6 +678,12 @@
 	{"name":"transracial","class":"Flags"},
 	{"name":"usa","tags": ["america"],"class":"Flags"},
 
+	{"name":"sharkybodybuilder","class":"Users"},
+	{"name":"sharkyglow","class":"Users"},
+	{"name":"sharkylove","class":"Users"},
+	{"name":"sharkysad","class":"Users"},
+	{"name":"sharkythink","class":"Users"},
+
 	{"name":"chadyescapy", "tags":["capy", "aevann"],"class":"Misc"},
 	{"name":"chadnocapy", "tags":["capy", "aevann"],"class":"Misc"},
 	{"name":"capygitcommit", "tags":["capy", "aevann"],"class":"Misc"},
@@ -690,6 +700,16 @@
 	{"name":"chadsneedcapy", "tags":["capy", "aevann"],"class":"Misc"},
 	{"name":"chadthankskingcapy", "tags":["capy", "aevann"],"class":"Misc"},
 	{"name":"chadthanksqueencapy", "tags":["capy", "aevann"],"class":"Misc"},
+	{"name":"chadstevejobs","class":"Misc"},
+	{"name":"breadmarsey","class":"Misc"},
+	{"name":"breadcapy","class":"Misc"},
+	{"name":"sharkmarsey","class":"Misc"},
+	{"name":"snootrollface","class":"Misc"},
+	{"name":"snoojoy","class":"Misc"},
+	{"name":"snooblowkiss","class":"Misc"},
+	{"name":"snoosurprise","class":"Misc"},
+	{"name":"snooupvote","class":"Misc"},
+	{"name":"snoothumbsup","class":"Misc"},
 	{"name":"gimp","class":"Misc"},
 	{"name":"sher","class":"Misc"},
 	{"name":"xdoubt","class":"Misc"},
@@ -722,5 +742,6 @@
 	{"name":"gigachad2", "tags": ["chad"], "class":"Misc"},
 	{"name":"gigachad3", "tags": ["chad"], "class":"Misc"},
 	{"name":"kippy","class":"Misc"},
-	{"name":"onerat","class":"Misc"}
+	{"name":"onerat","class":"Misc"},
+	{"name":"gunt","class":"Misc"}
 ]
