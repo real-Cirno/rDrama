@@ -5281,6 +5281,10 @@ th, td {
 	color: green !important;
 }
 
+#profile--bio a {
+	overflow-wrap: break-word;
+}
+
 .party-hat {
 	cursor: pointer;
     height: 20px;
@@ -5538,7 +5542,7 @@ audio, video {
 .fa-coins:before{content:"\f51e"}
 .fa-bell-slash:before{content:"\f1f6"}
 .fa-chart-network:before{content:"\f78a"}
-.fa-square-share-nodes:before{content:"\f1e0"}
+.fa-square-share-nodes:before{content:"\f1e1"}
 .fa-sidebar:before{content:"\e24e"}
 .fa-panorama:before{content:"\e209"}
 
