@@ -4133,7 +4133,6 @@ pre .com, code .com {
 }
 .gif-categories img {
 	border-radius: 0.35rem;
-	height: 100px;
 	width: 100%;
 	object-fit: cover;
 	-webkit-transition: all 0.15s ease;
@@ -4141,11 +4140,6 @@ pre .com, code .com {
 	-o-transition: all 0.15s ease;
 	-ms-transition: all 0.15s ease;
 	transition: all 0.15s ease;
-}
-@media (min-width: 991.98px) {
-	.gif-categories img {
-		height: 200px;
-	}
 }
 .gif-categories img:hover {
 	border: 3px solid var(--primary);
@@ -5543,11 +5537,11 @@ audio, video {
 .fa-panorama:before{content:"\e209"}
 
 .gif-categories {
-	column-count: 6 !important
+	column-count: 4 !important
 }
 
 @media (max-width: 768px) {
 	.gif-categories {
-		column-count: 2 !important
+		column-count: 1 !important
 	}
 }
