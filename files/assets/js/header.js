@@ -122,6 +122,7 @@ function expandDesktopImage(image) {
 	document.getElementById("desktop-expanded-image").src = image.replace("200w_d.webp", "giphy.webp");
 	document.getElementById("desktop-expanded-image-link").href = image;
 	document.getElementById("desktop-expanded-image-wrap-link").href = image;
+	return false;
 };
 
 function post_toast(t, url, reload, data) {
