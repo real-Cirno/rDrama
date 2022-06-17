@@ -4134,12 +4134,21 @@ pre .com, code .com {
 .gif-categories img {
 	border-radius: 0.35rem;
 	width: 100%;
-	object-fit: cover;
 	-webkit-transition: all 0.15s ease;
 	-moz-transition: all 0.15s ease;
 	-o-transition: all 0.15s ease;
 	-ms-transition: all 0.15s ease;
 	transition: all 0.15s ease;
+	width: 25vw;
+    height: 35vh;
+	-o-object-fit: contain;
+    object-fit: contain;
+}
+@media (max-width: 767.98px) {
+	.gif-categories img {
+		height: 150px;
+		width: 100%;
+	}
 }
 .gif-categories img:hover {
 	border: 3px solid var(--primary);
