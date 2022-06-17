@@ -178,6 +178,7 @@
 
 	{"name":"wolfheart","class":"Wolf"},
 	{"name":"wombiezolf","class":"Wolf"},
+	{"name":"wolfsal","class":"Wolf"},
 	{"name":"wolfdramanomicon","class":"Wolf","tags":["dramanomicon"]},
 	{"name":"wolfamogus","class":"Wolf","tags":["amogus", "sus", "stonetoss"]},
 	{"name":"wolfmarine","class":"Wolf","tags":["marine"]},
