@@ -66,9 +66,12 @@ document.onpaste = function(event) {
 			f.files = files;
 			document.getElementById('filename-show').textContent = filename;
 			document.getElementById('urlblock').classList.add('d-none');
-			var fileReader = new FileReader();
-			fileReader.readAsDataURL(f.files[0]);
-			fileReader.addEventListener("load", function () {document.getElementById('image-preview').setAttribute('src', this.result);});
+			if (filename.endsWith(".jpg") || filename.endsWith(".jpeg") || filename.endsWith(".png") || filename.endsWith(".gif") || filename.endsWith(".webp"))
+			{
+				var fileReader = new FileReader();
+				fileReader.readAsDataURL(f.files[0]);
+				fileReader.addEventListener("load", function () {document.getElementById('image-preview').setAttribute('src', this.result);});
+			}
 			document.getElementById('file-upload').setAttribute('required', 'false');
 		}
 		document.getElementById('post-url').value = null;
@@ -82,9 +85,12 @@ document.getElementById('file-upload').addEventListener('change', function(){
 	document.getElementById('urlblock').classList.add('d-none');
 	document.getElementById('filename-show').textContent = document.getElementById('file-upload').files[0].name.substr(0, 20);
 	filename = f.files[0].name.toLowerCase()
-	var fileReader = new FileReader();
-	fileReader.readAsDataURL(f.files[0]);
-	fileReader.addEventListener("load", function () {document.getElementById('image-preview').setAttribute('src', this.result);});
+	if (filename.endsWith(".jpg") || filename.endsWith(".jpeg") || filename.endsWith(".png") || filename.endsWith(".gif") || filename.endsWith(".webp"))
+	{
+		var fileReader = new FileReader();
+		fileReader.readAsDataURL(f.files[0]);
+		fileReader.addEventListener("load", function () {document.getElementById('image-preview').setAttribute('src', this.result);});  
+	}
 	checkForRequired();
 })
 
