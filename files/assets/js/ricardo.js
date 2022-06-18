@@ -25,20 +25,4 @@ if (!(navigator.deviceMemory < 3)) {
 
 		if (ricardo2) ricardo2.style.left=xpos+"%"
 	}, 1700)
-
-	var istop = false
-	setInterval(() => {
-		let ricardo3 = document.getElementById("ricardo3")
-		if (ricardo3) {
-			if (istop == true) {
-				ricardo3.style.top = "85%"
-				ricardo3.style.transform = "rotate(0deg)"
-				istop = false
-			} else {
-				ricardo3.style.top = "0%"
-				ricardo3.style.transform = "rotate(180deg)"
-				istop = true
-			}
-		}
-	}, 5000)
 }

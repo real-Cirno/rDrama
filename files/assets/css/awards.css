@@ -44,13 +44,13 @@
 }
 
 @keyframes ricardoleft {
-	from {left:-10%;}
-	to {left:10%;}
+	from {transform: translate(0);}
+	to {transform: translate(200px);}
 }
 
 @keyframes ricardoright {
-	from {left:100%;}
-	to {left:80%;}
+	from {transform: translate(110vw);}
+	to {transform: translate(95vw);}
 }
 
 #ricardo1 {
@@ -66,7 +66,7 @@
 
 #ricardo3 {
 	top:85%;
-	animation: ricardo3 5s linear infinite alternate !important;
+	animation: ricardo3 10s linear infinite !important;
 }
 
 @keyframes ricardo2 {
@@ -76,6 +76,7 @@
 }
 
 @keyframes ricardo3 {
-	from {left:0}
-	to {left:90%}
+	50% {transform: translate(105vw);}
+	51% {transform: translate(105vw,-86vh) rotate(180deg);}
+	100% {transform: translate(-15vw,-86vh) rotate(180deg);}
 }
