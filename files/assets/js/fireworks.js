@@ -33,7 +33,7 @@ if (!(navigator.deviceMemory < 3)) {
 			ypos--; 
 			firework.style.top=ypos+"%"
 		  }
-		}			   
+		}		   
 	  }, 5000)
 	}, timeout)
   }
