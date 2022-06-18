@@ -44,13 +44,13 @@
 }
 
 @keyframes ricardoleft {
-	from {transform: translate(0);}
-	to {transform: translate(200px);}
+	from {}
+	to {transform: translateX(200px);}
 }
 
 @keyframes ricardoright {
-	from {transform: translate(110vw);}
-	to {transform: translate(95vw);}
+	from {transform: translateX(110vw);}
+	to {transform: translateX(95vw);}
 }
 
 #ricardo1 {
@@ -76,7 +76,7 @@
 }
 
 @keyframes ricardo3 {
-	50% {transform: translate(105vw);}
+	50% {transform: translateX(105vw);}
 	51% {transform: translate(105vw,-86vh) rotate(180deg);}
 	100% {transform: translate(-15vw,-86vh) rotate(180deg);}
 }
