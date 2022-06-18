@@ -78,5 +78,13 @@
 @keyframes ricardo3 {
 	50% {transform: translateX(105vw);}
 	51% {transform: translate(105vw,-86vh) rotate(180deg);}
-	100% {transform: translate(-70vw,-86vh) rotate(180deg);}
+	100% {transform: translate(-15vw,-86vh) rotate(180deg);}
+}
+
+@media (max-width: 768px) {
+	@keyframes ricardo3 {
+		50% {transform: translateX(105vw);}
+		51% {transform: translate(105vw,-86vh) rotate(180deg);}
+		100% {transform: translate(-70vw,-86vh) rotate(180deg);}
+	}
 }
