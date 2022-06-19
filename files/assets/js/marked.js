@@ -36,7 +36,7 @@ function markdown(first, second) {
 	if (!input.includes('```') && !input.includes('<pre>'))
 		input = input.replace(/\n/g, '\n\n')
 	input = input.replace(/\|\|(.*?)\|\|/g, '<spoiler>$1</spoiler>')
-	input = input.replace(/(\n|^)>([^ ][^\n]*)/g, '$1<g>\>$2</g>')
+	input = input.replace(/(\n|^)>([^ >][^\n>]*)/g, '$1<g>\>$2</g>')
 
 	var emojis = Array.from(input.matchAll(/:([^:\s]{1,31}):/gi))
 	if(emojis != null){
