@@ -333,7 +333,7 @@ pre code {
 }
 .shadow {
 	/* box-shadow: 0 0.1px 3px rgba(190, 113, 113, 0.05), 0 0 0 0.1px rgba(0, 0, 0, 0.05); */
-    
+
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
 }
 .shadow-none {
@@ -1090,7 +1090,7 @@ input[type=submit].btn-follow, input[type=reset].btn-follow, input[type=button].
 }
 nav
 {
-    
+
 }
 
 .nav-link {
@@ -3259,7 +3259,7 @@ small, .small {
 .score-up {
 	color: var(--primary);
 	font-size: 1.1rem;
-    
+
 }
 .score-up-anim
 {
@@ -4751,7 +4751,7 @@ video {
 }
 .edit-title {
 	background-color: #fff !important;
-	color: #000 !important 
+	color: #000 !important
 }
 .text-lightblue {
 	color: lightblue;
@@ -4760,7 +4760,7 @@ input[type=radio] ~ .custom-control-label::before {
 	border-radius: 50%;
 }
 .emoji-modal {
-	max-width: 90% !important 
+	max-width: 90% !important
 }
 .emj, .emoji, strong a img, img[alt^=":"]:not(img[b]):not(img[alt*="#"]) {
 	height: 30px !important;
@@ -4811,7 +4811,7 @@ img[src="/assets/images/hand.webp"]+img[src^="/pp/"], img[src="/assets/images/ha
     50% { transform: scale(0.8, 1) }
     100% { transform: scale(1, 0.8) }
 }
-        
+
 .twitter-tweet {
 	margin-bottom: 9.8px;
 	padding-bottom: 7px;
@@ -5226,7 +5226,7 @@ li > .sidebar {
 	object-fit: cover !important;
 }
 
-@media (max-width: 500px) { 
+@media (max-width: 500px) {
 	.count {
 		display:block;
 		text-align: center;
@@ -5466,8 +5466,8 @@ audio, video {
 	color: var(--black);
 }
 
-#sidebar--counter--total, 
-#sidebar--counter--flavor, 
+#sidebar--counter--total,
+#sidebar--counter--flavor,
 #sidebar--counter--loggedin {
 	font-size: 1.1rem;
 }
@@ -5508,7 +5508,7 @@ audio, video {
 
 .directory--link--icon {
 	font-size: 2rem;
-	text-shadow: 
+	text-shadow:
 		-1px -1px 0 #000,
 		1px -1px 0 #000,
 		-1px 1px 0 #000,
@@ -5540,6 +5540,8 @@ audio, video {
 .fa-square-share-nodes:before{content:"\f1e1"}
 .fa-sidebar:before{content:"\e24e"}
 .fa-panorama:before{content:"\e209"}
+
+.fa-chart-line:before{content:"\f201"}
 
 .gif-categories {
 	column-count: 4 !important
