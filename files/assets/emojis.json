@@ -761,6 +761,7 @@
 	{"name":"snooupvote","class":"Misc"},
 	{"name":"snoothumbsup","class":"Misc"},
 	{"name":"gimp","class":"Misc"},
+	{"name":"taddance","class":"Misc","tags":["terry","davis","templeos","dance"]},
 	{"name":"sher","class":"Misc"},
 	{"name":"xdoubt","class":"Misc"},
 	{"name":"gigachadjesus","tags": ["chad", "jesus", "christ"],"class":"Misc"},
