@@ -4811,6 +4811,15 @@ img[src="/assets/images/hand.webp"]+img[src^="/pp/"], img[src="/assets/images/ha
     50% { transform: scale(0.8, 1) }
     100% { transform: scale(1, 0.8) }
 }
+
+/* Fix for <ol> being populated with <li><p></p></li> in many contexts. */
+.post-body li > p:first-child,
+.comment-text li > p:first-child,
+.preview li > p:first-child,
+div[id^="form-preview-"] li > p:first-child,
+div[id^="reply-edit-"] li > p:first-child {
+	display: inline;
+}
         
 .twitter-tweet {
 	margin-bottom: 9.8px;
