@@ -3411,6 +3411,14 @@ small, .small {
 	padding: 0.5rem 1rem;
 	border-bottom: 0.1px solid var(--gray-400);
 }
+.card-thumbnail {
+	z-index: 3;
+	display: flex;
+	align-items: center;
+}
+.card-block {
+	position: relative; /* fixes stretched-link in card view */
+}
 .card {
 	background-color: var(--gray-900);
 }
