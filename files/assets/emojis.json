@@ -677,6 +677,8 @@
 	{"name":"chadnordic","tags": ["nordic", "nazi"],"class":"Wojak"},
 	{"name":"chadsikh","tags": ["sikh", "indian"],"class":"Wojak"},
 	{"name":"chadusa","tags": ["usa", "america", "freedom"],"class":"Wojak"},
+	{"name":"chadsoy","class":"Wojak","tags": ["soy"]},
+	{"name":"chadsoylent","class":"Wojak","tags": ["soy", "soylent"]},
 	{"name":"coomer","class":"Wojak"},
 	{"name":"doomer","class":"Wojak"},
 	{"name":"doomerfront","class":"Wojak"},
