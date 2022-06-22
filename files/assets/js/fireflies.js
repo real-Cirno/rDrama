@@ -1,6 +1,6 @@
 if (!(navigator.deviceMemory < 3)) {
 	new BugController({
-		imageSprite: "/assets/images/fireflies.webp",
+		imageSprite: "/i/fireflies.webp",
 		canDie: false,
 		minBugs: 10,
 		maxBugs: 30,

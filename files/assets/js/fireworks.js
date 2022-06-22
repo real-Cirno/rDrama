@@ -7,7 +7,7 @@ if (!(navigator.deviceMemory < 3)) {
 	counter++
 	setTimeout(() => {
 	  setInterval(() => {
-		firework.firstElementChild.src = "/assets/images/firework-trail.webp"
+		firework.firstElementChild.src = "/i/firework-trail.webp"
 
 		var xpos = Math.floor(Math.random() * 80) + 5
 		var ypos = 95
@@ -28,7 +28,7 @@ if (!(navigator.deviceMemory < 3)) {
 		function frame() {
 		  if (ypos <= height) {
 			clearInterval(id);
-			firework.firstElementChild.src = "/assets/images/firework-explosion.webp?v="+vnum
+			firework.firstElementChild.src = "/i/firework-explosion.webp?v="+vnum
 		  } else {
 			ypos--; 
 			firework.style.top=ypos+"%"
