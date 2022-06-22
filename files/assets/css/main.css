@@ -5495,6 +5495,17 @@ audio, video {
 	font-size: 0.9rem;
 }
 
+#sidebar--rules--head {
+	margin-bottom: 1rem;
+	text-align: center;
+	text-decoration: underline;
+}
+
+#sidebar--rules--list {
+	padding-left: 0;
+	font-size: 0.95rem;
+}
+
 #sidebar--directory--head {
 	display: block;
 	font-size: 1.35rem;
