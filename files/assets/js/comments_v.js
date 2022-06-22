@@ -108,8 +108,8 @@ function openReplyBox(id) {
 	let text = getSelection().toString().trim()
 	if (text)
 	{
-		textarea.value = '>' + text
-		textarea.value = textarea.value.replace(/\n([^$])/g,"\n>$1")
+		textarea.value = '> ' + text
+		textarea.value = textarea.value.replace(/\n([^$])/g,"\n> $1")
 		if (!textarea.value.endsWith('\n')) textarea.value += '\n'
 	}
 	element.classList.remove('d-none')
