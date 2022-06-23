@@ -245,6 +245,7 @@
 	{"name":"wolftrans","class":"Wolf","tags":["trans"]},
 	{"name":"wolfvaporwave","class":"Wolf","tags":["vaporwave"]},
 	{"name":"wolfangry","class":"Wolf","tags":["angry"]},
+	{"name":"wolfdinosaur","class":"Wolf","tags":["rawr","dinosaur"]},
 	{"name":"wolfbrains","class":"Wolf","author":"anton-d","tags":["brains"]},
 	{"name":"wolfcry","class":"Wolf","author":"anton-d","tags":["cry"]},
 	{"name":"wolfdead","class":"Wolf","author":"anton-d","tags":["dead"]},
