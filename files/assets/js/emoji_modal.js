@@ -279,6 +279,7 @@ function switchEmojiTab(e)
 	const className = e.currentTarget.dataset.className;
 
 	emojiSearchBarDOM.value = "";
+	emojiSearchBarDOM.focus();
 	emojiNotFoundDOM.hidden = true;
 
 	// Special case: favorites
@@ -386,6 +387,10 @@ function loadEmojis(inputTargetIDName)
 
 	emojiInputTargetDOM = document.getElementById(inputTargetIDName);
 }
+
+document.getElementById('emojiModal').addEventListener('shown.bs.modal', function () {
+	emojiSearchBarDOM.focus();
+});
 
 // Search opt stuff
 // Restore prev. status of the search preference
