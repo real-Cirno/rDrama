@@ -223,6 +223,7 @@
 	{"name":"platythumbsup","class":"Platy","tags":["thumbsup"]},
 	{"name":"platywave","class":"Platy","tags":["wave"]},
 	{"name":"platykys","class":"Platy","tags":["kys", "killyourself", "keepyourselfsafe"]},
+	{"name":"platydinosaur","class":"Platy","tags":["rawr","dinosaur"]},
 
 	{"name":"wolfheart","class":"Wolf"},
 	{"name":"wombiezolf","class":"Wolf"},
