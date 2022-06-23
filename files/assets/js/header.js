@@ -125,7 +125,7 @@ function expandDesktopImage(image) {
 	this.event.preventDefault();
 };
 
-function post_toast(t, url, reload, data) {
+function post_toast(t, url, button1, button2, classname) {
 	t.disabled = true;
 	t.classList.add("disabled");
 	const xhr = new XMLHttpRequest();
@@ -134,11 +134,6 @@ function post_toast(t, url, reload, data) {
 	var form = new FormData()
 	form.append("formkey", formkey());
 
-	if(typeof data === 'object' && data !== null) {
-		for(let k of Object.keys(data)) {
-			form.append(k, data[k]);
-		}
-	}
 
 	xhr.onload = function() {
 		let data
@@ -147,7 +142,16 @@ function post_toast(t, url, reload, data) {
 		if (xhr.status >= 200 && xhr.status < 300 && data && data['message']) {
 			document.getElementById('toast-post-success-text').innerText = data["message"];
 			bootstrap.Toast.getOrCreateInstance(document.getElementById('toast-post-success')).show();
-			if (reload == 1) {location.reload()}
+
+			if (button1)
+			{
+				if (typeof(button1) == 'boolean')
+					location.reload()
+				else {
+					document.getElementById(button1).classList.toggle(classname);
+					document.getElementById(button2).classList.toggle(classname);
+				}
+			}
 		} else {
 			document.getElementById('toast-post-error-text').innerText = "Error, please try again later."
 			if (data && data["error"]) document.getElementById('toast-post-error-text').innerText = data["error"];
