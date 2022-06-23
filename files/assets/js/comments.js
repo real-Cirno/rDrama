@@ -1,5 +1,4 @@
 function collapse_comment(id, element) {
-	console.log(element)
 	const closed = element.classList.toggle("collapsed")
 	const top = element.getBoundingClientRect().y
 
@@ -10,6 +9,12 @@ function collapse_comment(id, element) {
 
 	const flags = document.getElementById(`flaggers-${id}`)
 	if (flags) flags.classList.add('d-none')
+
+	vids = element.getElementsByTagName('video')
+	for (let i=0; i < vids.length; i++)
+	{
+		vids[i].pause()
+	}
 };
 
 function poll_vote_no_v() {
