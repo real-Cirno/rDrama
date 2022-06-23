@@ -4961,9 +4961,10 @@ img.golden, img[g] {
 	animation-timing-function: linear !important;
 }
 
+
 @keyframes glowing {
-	from {filter: sepia(100%) hue-rotate(60deg) brightness(130%) saturate(250%) drop-shadow(-1px 1px 1px lime)}
-	to {filter: sepia(100%) hue-rotate(60deg) brightness(130%) saturate(250%) drop-shadow(-1px 1px 10px lime)}
+	from {filter: sepia(100%) hue-rotate(80deg) saturate(200%) drop-shadow(-1px 1px 1px lime)}
+	to {filter: sepia(100%) hue-rotate(80deg) saturate(500%) drop-shadow(-1px 1px 10px lime)}
 }
 
 img[glow] {
