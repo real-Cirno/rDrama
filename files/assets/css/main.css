@@ -5531,6 +5531,28 @@ audio, video {
 	font-size: 0.95rem;
 }
 
+#sidebar-wpd--flairs {
+	display: grid;
+	align-items: center;
+	grid-template-columns: repeat(3, 1fr);
+	margin-bottom: 2rem;
+	grid-gap: 1px;
+}
+
+#sidebar-wpd--flairs a {
+	padding: 5px 5px 4px 5px;
+	text-align: center;
+	color: var(--muted);
+	background-color: var(--background);
+	box-shadow: 0 0 0 1px var(--primary);
+}
+
+#sidebar-wpd--flairs a:hover {
+	color: #fff;
+	font-style: italic;
+	text-decoration: none;
+}
+
 #sidebar--directory--head {
 	display: block;
 	font-size: 1.35rem;
