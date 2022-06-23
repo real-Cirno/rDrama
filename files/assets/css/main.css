@@ -4953,7 +4953,7 @@ lite-youtube.lyt-activated > .lty-playbtn {
 	from {filter: sepia(100%) saturate(2) drop-shadow(-1px 1px 1px gold)}
 	to {filter: sepia(100%) saturate(3) drop-shadow(-1px 1px 3px gold)}
 }
-img.golden, img[g]:not([loading]) {
+img.golden, img[g]:not(img[loading]) {
 	animation-name: golden !important;
 	animation-duration: 1s !important;
 	animation-iteration-count: infinite !important;
@@ -4967,7 +4967,7 @@ img.golden, img[g]:not([loading]) {
 	to {filter: sepia(100%) hue-rotate(80deg) saturate(500%) drop-shadow(-1px 1px 10px lime)}
 }
 
-img[glow]:not([loading]) {
+img[glow]:not(img[loading]) {
 	animation-name: glowing !important;
 	animation-duration: 1s !important;
 	animation-iteration-count: infinite !important;
