@@ -2,6 +2,8 @@ document.getElementById('post-title').value = localStorage.getItem("post_title")
 document.getElementById('post-text').value = localStorage.getItem("post_text")
 document.getElementById('post-url').value = localStorage.getItem("post_url")
 
+markdown('post-text','preview');
+
 function checkForRequired() {
 	const title = document.getElementById("post-title");
 	const url = document.getElementById("post-url");
