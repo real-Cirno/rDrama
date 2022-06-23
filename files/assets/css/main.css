@@ -3470,6 +3470,17 @@ small, .small {
 	font-size: 12px;
 	width: fit-content;
 }
+.sub-flair {
+	padding: 3px 5px 2px 5px;
+	border-radius: 5px;
+	color: var(--white);
+	background-color: var(--primary);
+	margin-right: 3px;
+}
+.sub-flair:hover {
+	color: var(--white);
+	text-decoration: none;
+}
 #frontpage .posts .card .card-footer, #userpage .posts .card .card-footer, #thread .card .card-footer, #search .posts .card .card-footer {
 	border: 0;
 	background-color: transparent;
