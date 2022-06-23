@@ -287,40 +287,49 @@ function post_comment(fullname){
 document.onpaste = function(event) {
 	var focused = document.activeElement;
 	if (focused.id.includes('reply-form-body-')) {
-		var fullname = focused.dataset.fullname;
-		f=document.getElementById('file-upload-reply-' + fullname);
 		files = event.clipboardData.files
-		try {
+		if (files.length)
+		{
+			var fullname = focused.dataset.fullname;
+			f=document.getElementById('file-upload-reply-' + fullname);
+			try {
+				let filename = ''
+				for (const file of files)
+					filename += file.name + ', '
+				filename = filename.toLowerCase().slice(0, -2)
+				f.files = files;
+				document.getElementById('filename-show-reply-' + fullname).textContent = filename;
+			}
+			catch(e) {}
+		}
+	}
+	else if (focused.id.includes('comment-edit-body-')) {
+		files = event.clipboardData.files
+		if (files.length)
+		{
+			var id = focused.dataset.id;
+			f=document.getElementById('file-edit-reply-' + id);
 			let filename = ''
 			for (const file of files)
 				filename += file.name + ', '
 			filename = filename.toLowerCase().slice(0, -2)
 			f.files = files;
-			document.getElementById('filename-show-reply-' + fullname).textContent = filename;
+			document.getElementById('filename-edit-reply-' + id).textContent = filename;
 		}
-		catch(e) {}
-	}
-	else if (focused.id.includes('comment-edit-body-')) {
-		var id = focused.dataset.id;
-		f=document.getElementById('file-edit-reply-' + id);
-		files = event.clipboardData.files
-		let filename = ''
-		for (const file of files)
-			filename += file.name + ', '
-		filename = filename.toLowerCase().slice(0, -2)
-		f.files = files;
-		document.getElementById('filename-edit-reply-' + id).textContent = filename;
 	}
 	else if (focused.id.includes('post-edit-box-')) {
-		var id = focused.dataset.id;
-		f=document.getElementById('file-upload-edit-' + id);
 		files = event.clipboardData.files
-		let filename = ''
-		for (const file of files)
-			filename += file.name + ', '
-		filename = filename.toLowerCase().slice(0, -2)
-		f.files = files;
-		document.getElementById('filename-show-edit-' + id).textContent = filename;
+		if (files.length)
+		{
+			var id = focused.dataset.id;
+			f=document.getElementById('file-upload-edit-' + id);
+			let filename = ''
+			for (const file of files)
+				filename += file.name + ', '
+			filename = filename.toLowerCase().slice(0, -2)
+			f.files = files;
+			document.getElementById('filename-show-edit-' + id).textContent = filename;
+		}
 	}
 }
 

@@ -87,13 +87,16 @@ function updatebgselection(){
 document.onpaste = function(event) {
 	var focused = document.activeElement;
 	if (focused.id == 'bio-text') {
-		f=document.getElementById('file-upload');
 		files = event.clipboardData.files
-		let filename = ''
-		for (const file of files)
-			filename += file.name + ', '
-		filename = filename.toLowerCase().slice(0, -2)
-		f.files = files;
-		document.getElementById('filename-show').textContent = filename;
+		if (files.length)
+		{
+			f=document.getElementById('file-upload');
+			let filename = ''
+			for (const file of files)
+				filename += file.name + ', '
+			filename = filename.toLowerCase().slice(0, -2)
+			f.files = files;
+			document.getElementById('filename-show').textContent = filename;
+		}
 	}
 }
