@@ -62,7 +62,7 @@ function markdown(first, second) {
 			var option = options[i][0];
 			var option2 = option.replace(/\$\$/g, '').replace(/\n/g, '')
 			input = input.replace(option, '');
-			input += '<div class="custom-control"><input type="checkbox" class="custom-control-input" id="' + option2 + '"><label class="custom-control-label" for="' + option2 + '">' + option2 + ' - <a>0 votes</a></label></div>';
+			input += `<div class="custom-control"><input type="checkbox" class="custom-control-input" id="option-${i}"><label class="custom-control-label" for="option-${i}">${option2} - <a>0 votes</a></label></div>`;
 		}
 	}
 
@@ -72,7 +72,7 @@ function markdown(first, second) {
 			var option = options[i][0];
 			var option2 = option.replace(/&&/g, '').replace(/\n/g, '')
 			input = input.replace(option, '');
-			input += '<div class="custom-control"><input type="radio" name="choice" class="custom-control-input" id="' + option2 + '"><label class="custom-control-label" for="' + option2 + '">' + option2 + ' - <a>0 votes</a></label></div>';
+			input += `<div class="custom-control"><input type="radio" name="choice" class="custom-control-input" id="choice-${i}"><label class="custom-control-label" for="choice-${i}">${option2} - <a>0 votes</a></label></div>`;
 		}
 	}
 	
