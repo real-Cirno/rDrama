@@ -42,3 +42,10 @@ addEventListener('hashchange', function (e) {
 		bootstrap.Modal.getInstance(document.getElementsByClassName('modal')[0]).hide()
 	}
 });
+
+function disable(this) {
+	this.classList.add('disabled');
+	setTimeout(() => {
+		this.classList.remove("disabled");
+	}, 1000);
+}
