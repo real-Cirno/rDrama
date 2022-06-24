@@ -47,5 +47,5 @@ function disable(t) {
 	t.classList.add('disabled');
 	setTimeout(() => {
 		t.classList.remove("disabled");
-	}, 1000);
+	}, 2000);
 }
