@@ -26,3 +26,13 @@ if (window.location.pathname != '/submit')
 		}, 2000);
 	});
 }
+
+addEventListener('show.bs.modal', function (e) {
+	location.hash = "modal";
+});
+  
+addEventListener('hashchange', function (e) {
+	if(location.hash != "#modal") {
+		bootstrap.Modal.getInstance(document.getElementsByClassName('modal')[0]).hide()
+	}
+});
