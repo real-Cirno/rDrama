@@ -179,3 +179,10 @@ function changename(s1,s2) {
 	}
 	document.getElementById(s1).innerHTML = escapeHTML(filename.slice(0, -2));
 }
+
+function disable(this) {
+	this.classList.add('disabled');
+	setTimeout(() => {
+		this.classList.remove("disabled");
+	}, 1000);
+}
