@@ -30,7 +30,13 @@ if (window.location.pathname != '/submit')
 addEventListener('show.bs.modal', function (e) {
 	location.hash = "modal";
 });
-  
+
+addEventListener('hide.bs.modal', function (e) {
+	if(location.hash == "#modal") {
+		history.replaceState("", document.title, location.pathname+location.search);
+	}
+});
+
 addEventListener('hashchange', function (e) {
 	if(location.hash != "#modal") {
 		bootstrap.Modal.getInstance(document.getElementsByClassName('modal')[0]).hide()
