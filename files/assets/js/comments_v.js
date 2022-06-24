@@ -69,7 +69,7 @@ function openReplyBox(id) {
 	if (text)
 	{
 		textarea.value = '> ' + text
-		textarea.value = textarea.value.replace(/\n([^$])/g,"\n> $1")
+		textarea.value = textarea.value.replace(/\n([^$])/g,"\n> $1").replace(/\*/g,"\\*")
 		if (!textarea.value.endsWith('\n')) textarea.value += '\n'
 	}
 	element.classList.remove('d-none')
