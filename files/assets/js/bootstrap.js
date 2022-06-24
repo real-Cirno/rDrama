@@ -39,7 +39,7 @@ addEventListener('hide.bs.modal', function (e) {
 
 addEventListener('hashchange', function (e) {
 	if(location.hash != "#modal") {
-		bootstrap.Modal.getInstance(document.getElementsByClassName('modal')[0]).hide()
+		bootstrap.Modal.getInstance(document.getElementsByClassName('show')[0]).hide()
 	}
 });
 
