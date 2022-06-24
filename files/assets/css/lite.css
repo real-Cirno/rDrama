@@ -10,3 +10,7 @@
 #post-root, .comment-anchor {
 	animation-name: none !important
 }
+
+* :not(img[src="/i/hand.webp"] + img):not(img.golden, img[g], img[glow]) {
+	animation: unset !important;
+}
