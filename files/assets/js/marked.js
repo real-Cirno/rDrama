@@ -30,8 +30,24 @@ marked.use({
 });
 
 
+function markdown(first, second, dialog) {
+	if (!location.pathname.startsWith('/submit'))
+	{
+		if (!window.onbeforeunload)
+		{
+			window.onbeforeunload = function (e) {
+				e = e || window.event;
+				if (e) {
+					e.returnValue = 'Any string';
+				}
+				return 'Any string';
+			};
+		}
+		else if (!input) {
+			window.onbeforeunload = null
+		}
+	}
 
-function markdown(first, second) {
 	var input = document.getElementById(first).value;
 	if (!input.includes('```') && !input.includes('<pre>'))
 		input = input.replace(/\n/g, '\n\n')
@@ -100,4 +116,8 @@ function charLimit(form, text) {
 	}
 
 	text.innerText = length + ' / ' + maxLength;
+}
+
+function remove_dialog() {
+	window.onbeforeunload = null;
 }
