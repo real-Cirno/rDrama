@@ -99,7 +99,7 @@ function send() {
 }
 
 function quote(t) {
-	text = t.previousElementSibling.innerHTML.replace(/&gt;/g, ">").replace(/\n/g, "\n>")
+	text = t.previousElementSibling.innerHTML.replace(/&gt;/g, "> ").replace(/\n/g, "\n> ")
 	let username
 	try {username = t.parentElement.previousElementSibling.innerHTML}
 	catch(e) {username = t.parentElement.parentElement.previousElementSibling.innerHTML}
