@@ -1,0 +1,12 @@
+.bug, .train, .seal, .firework, #post-award-confetti, .ricardo {
+	display: none !important
+}
+
+.glow * {
+	color: var(--black) !important;
+	text-shadow: none !important
+}
+
+#post-root, .comment-anchor {
+	animation-name: none !important
+}
