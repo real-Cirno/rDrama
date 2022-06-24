@@ -43,9 +43,9 @@ addEventListener('hashchange', function (e) {
 	}
 });
 
-function disable(this) {
-	this.classList.add('disabled');
+function disable(t) {
+	t.classList.add('disabled');
 	setTimeout(() => {
-		this.classList.remove("disabled");
+		t.classList.remove("disabled");
 	}, 1000);
 }
