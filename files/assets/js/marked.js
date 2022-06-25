@@ -31,6 +31,8 @@ marked.use({
 
 
 function markdown(first, second, dialog) {
+	let input = document.getElementById(first).value;
+
 	if (!location.pathname.startsWith('/submit'))
 	{
 		if (!window.onbeforeunload)
@@ -48,7 +50,6 @@ function markdown(first, second, dialog) {
 		}
 	}
 
-	var input = document.getElementById(first).value;
 	if (!input.includes('```') && !input.includes('<pre>'))
 		input = input.replace(/\n/g, '\n\n')
 	input = input.replace(/\|\|(.*?)\|\|/g, '<spoiler>$1</spoiler>')
