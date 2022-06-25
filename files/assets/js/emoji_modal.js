@@ -308,7 +308,7 @@ function switchEmojiTab(e)
 		emojiDOM.hidden = emojiDOM.dataset.className !== className;
 }
 
-function start_search() {
+async function start_search() {
 	emojiSearcher.addQuery(emojiSearchBarDOM.value);
 
 	// Remove any selected tab, now it is meaningless
@@ -317,9 +317,7 @@ function start_search() {
 }
 
 if (!(navigator.deviceMemory < 4)) {
-	emojiSearchBarDOM.oninput = async function(event) {
-		start_search()
-	}
+	emojiSearchBarDOM.oninput = start_search
 }
 
 /**
