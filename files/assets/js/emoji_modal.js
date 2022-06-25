@@ -90,7 +90,6 @@ let emojiSearcher = {
 
 			emojiNotFoundDOM.hidden = resultSet.size !== 0;
 
-			console.log("Search time: " + (Date.now() - startTime) + "ms completeSearch=" + completeSearch);
 			let sleepTime = EMOIJ_SEARCH_ENGINE_MIN_INTERVAL - (Date.now() - startTime);
 			if(sleepTime > 0)
 				await new Promise(r => setTimeout(r, sleepTime));
@@ -263,7 +262,6 @@ emojiRequest.onload = async (e) => {
 	
 	// Send it to the render machine! 
 	emojiResultsDOM.appendChild(bussyDOM);
-	console.log("Ho impiegato " + (Date.now() - startTime) + " ms per generare il DOM delle emoji (bussy)");
 
 	emojiResultsDOM.hidden = false;
 	emojiWorkingDOM.hidden = true;
@@ -310,12 +308,18 @@ function switchEmojiTab(e)
 		emojiDOM.hidden = emojiDOM.dataset.className !== className;
 }
 
-emojiSearchBarDOM.oninput = async function(event) {
+function start_search() {
 	emojiSearcher.addQuery(emojiSearchBarDOM.value);
 
 	// Remove any selected tab, now it is meaningless
 	for(let i = 0; i < classesSelectorDOM.children.length; i++)
 		classesSelectorDOM.children[i].children[0].classList.remove("active");
+}
+
+if (!(navigator.deviceMemory < 4)) {
+	emojiSearchBarDOM.oninput = async function(event) {
+		start_search()
+	}
 }
 
 /**
