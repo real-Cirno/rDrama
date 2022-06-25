@@ -33,7 +33,7 @@ addEventListener('show.bs.modal', function (e) {
 
 addEventListener('hide.bs.modal', function (e) {
 	if(location.hash == "#modal") {
-		history.replaceState("", document.title, location.pathname+location.search);
+		history.back();
 	}
 });
 
