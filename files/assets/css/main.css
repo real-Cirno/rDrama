@@ -4963,8 +4963,8 @@ img.golden, img[g]:not([data-bs-target]) {
 
 
 @keyframes glowing {
-	from {filter: sepia(100%) hue-rotate(80deg) saturate(200%) drop-shadow(-1px 1px 1px lime)}
-	to {filter: sepia(100%) hue-rotate(80deg) saturate(500%) drop-shadow(-1px 1px 10px lime)}
+	from {filter: sepia(100%) hue-rotate(80deg) saturate(200%)}
+	to {filter: sepia(100%) hue-rotate(80deg) saturate(500%) drop-shadow(-1px 1px 5px lime)}
 }
 
 img[glow]:not([data-bs-target]) {
