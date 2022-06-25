@@ -1,4 +1,4 @@
-if (!(navigator.deviceMemory < 3)) {
+if (!(navigator.deviceMemory == 2)) {
   const fireworks = document.getElementsByClassName("firework")
   var counter = 0
 
