@@ -316,7 +316,7 @@ async function start_search() {
 		classesSelectorDOM.children[i].children[0].classList.remove("active");
 }
 
-if (!(navigator.devicememory <= 3)) {
+if (!(navigator.deviceMemory < 4)) {
 	emojiSearchBarDOM.oninput = start_search
 }
 
