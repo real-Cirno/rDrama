@@ -93,7 +93,9 @@ function markdown(first, second, dialog) {
 		}
 	}
 	
-	document.getElementById(second).innerHTML = marked(input)
+	input = marked(input)
+	input = input.replace(/\n\n/g, '<br>')
+	document.getElementById(second).innerHTML = input
 }
 
 function charLimit(form, text) {
