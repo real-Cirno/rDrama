@@ -316,8 +316,6 @@ async function start_search() {
 		classesSelectorDOM.children[i].children[0].classList.remove("active");
 }
 
-emojiSearchBarDOM.oninput = start_search
-
 /**
  * Add the selected emoji to the targeted text area
  * @param {Event} event 
