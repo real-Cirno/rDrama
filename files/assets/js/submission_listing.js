@@ -8,9 +8,21 @@ function expandText(id) {
 };
 
 function togglevideo(pid) {
+	const e = this.event
+	if(e.ctrlKey || e.metaKey || e.shiftKey || e.altKey)
+		return true;
+	e.preventDefault();
 	let vid = document.getElementById(`video-${pid}`).classList
 	vid.toggle('d-none')
 	let vid2 = document.getElementById(`video2-${pid}`)
 	if (vid.contains('d-none')) vid2.pause()
 	else vid2.play()
+}
+
+function toggleyoutube(pid) {
+	const e = this.event
+	if(e.ctrlKey || e.metaKey || e.shiftKey || e.altKey)
+		return true;
+	e.preventDefault();
+	document.getElementById(`video-${pid}`).classList.toggle('d-none')
 }
