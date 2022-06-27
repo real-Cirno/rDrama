@@ -29,11 +29,12 @@ marked.use({
 	]
 });
 
+const reDisableBeforeUnload = /^\/submit|^\/h\/[a-zA-Z0-9_\-]{3,20}\/submit/;
 
 function markdown(first, second, dialog) {
 	let input = document.getElementById(first).value;
 
-	if (!location.pathname.startsWith('/submit'))
+	if (!reDisableBeforeUnload.test(location.pathname))
 	{
 		if (!window.onbeforeunload)
 		{
