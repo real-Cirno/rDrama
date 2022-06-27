@@ -9,8 +9,6 @@ if (window.location.pathname != '/submit')
 		if(!(targetDOM instanceof HTMLTextAreaElement || targetDOM instanceof HTMLInputElement)) return;
 
 		const formDOM = targetDOM.parentElement;
-		if(!(formDOM instanceof HTMLFormElement))
-			throw new TypeError("the text area should be child of a FORM. Contact the head custodian immediately.");
 
 		const submitButtonDOMs = formDOM.querySelectorAll('input[type=submit], .btn-primary');
 		if(submitButtonDOMs.length === 0)
