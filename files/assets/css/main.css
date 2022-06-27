@@ -4474,6 +4474,7 @@ div.deleted.banned {
 .object-cover {
 	object-fit: cover;
 }
+
 .spoiler, spoiler {
 	color: var(--white);
 	background-color: var(--white);
@@ -4483,6 +4484,13 @@ div.deleted.banned {
 .spoiler:hover, spoiler:hover {
 	color: var(--gray);
 }
+.spoiler img, spoiler img {
+	visibility: hidden;
+}
+.spoiler:hover img, spoiler:hover img {
+	visibility: visible;
+}
+
 @media (min-width: 768px) {
 	.comment {
 		border-left: 0 !important;
