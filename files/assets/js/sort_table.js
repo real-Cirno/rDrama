@@ -1,6 +1,6 @@
 function sort_table(n) {
 	var table, rows, switching, i, x, y, shouldSwitch, switchcount = 0;
-	table = document.getElementById("sortable_table");
+	table = this.event.target.parentElement.parentElement.parentElement
 	switching = true;
 	while (switching) {
 		switching = false;
