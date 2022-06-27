@@ -4652,7 +4652,7 @@ textarea {
 }
 @media (min-width: 767.98px) {
 	.navbar {
-		padding: 0.5rem 3rem 0.4rem 0.5rem;
+		padding: 0.5rem 1.5rem 0.4rem 0.5rem;
 }
 }
 blockquote {
@@ -5517,6 +5517,11 @@ audio, video {
 
 .header--currency img {
 	max-height: 13px;
+}
+
+
+#header--dropdown, #header--dropdown-menu {
+	min-width: 12.5em;
 }
 
 .sidebar-link {
