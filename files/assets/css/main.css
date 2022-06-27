@@ -5497,6 +5497,20 @@ audio, video {
 	}
 }
 
+#header--username {
+	padding-left: 5px;
+}
+
+.header--currency {
+	font-size: 12px;
+	line-height: 13px;
+	display: inline-block;
+}
+
+.header--currency img {
+	max-height: 13px;
+}
+
 .sidebar-link {
 	display: inline;
 	padding: 0rem 0.60rem 1rem 0.60rem;
