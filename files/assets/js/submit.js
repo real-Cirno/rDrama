@@ -142,10 +142,10 @@ function draft(t) {
    }
 }
 
-function checkRepost(t) {
+function checkRepost() {
 	const system = document.getElementById('system')
 	system.innerHTML = `To post an image, use a direct image link such as i.imgur.com`;
-	const url = t.value
+	const url = document.getElementById('post-url').value
 
 	if (url) {
 		const xhr = new XMLHttpRequest();
