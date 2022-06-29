@@ -212,3 +212,9 @@ function changename(s1,s2) {
 	}
 	document.getElementById(s1).innerHTML = escapeHTML(filename.slice(0, -2));
 }
+
+function showmore() {
+	const btn = this.event.target
+	const div = btn.parentElement.nextSibling
+	div.classList.toggle('d-none')
+}
