@@ -178,3 +178,5 @@ document.addEventListener('keydown', (e) => {
 
    submitButton.click();
 });
+
+checkRepost()
