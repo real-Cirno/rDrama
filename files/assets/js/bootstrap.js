@@ -237,7 +237,7 @@ function showmore() {
 	const div = btn.parentElement.nextSibling
 	div.classList.toggle('d-none')
 	if (div.classList.contains('d-none'))
-		btn.innerHTML = 'SHOW MORE...'
+		btn.innerHTML = 'SHOW MORE'
 	else
-		btn.innerHTML = 'SHOW LESS...'
+		btn.innerHTML = 'SHOW LESS'
 }
