@@ -78,6 +78,25 @@ function smoothScrollTop()
 	window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+// Click navbar to scroll back to top
+(() => {
+	let toplisteners = [
+		document.querySelector('nav')
+	];
+
+	for (let i of toplisteners)
+	{
+		i.addEventListener('click', (e) => {
+			if (e.target.id === "navbar" ||
+				e.target.classList.contains("container-fluid") ||
+				e.target.id == "navbarResponsive" ||
+				e.target.id == "logo-container" ||
+				e.target.classList.contains("srd"))
+				smoothScrollTop();
+		}, false);
+	}
+})();
+
 // Dynamic shadow when the user scrolls
 document.addEventListener('scroll',function (event) {
 	let nav = document.querySelector("nav");
