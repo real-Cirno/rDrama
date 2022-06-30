@@ -5524,6 +5524,11 @@ audio, video {
 	min-width: 12.5em;
 }
 
+#sidebar-content {
+	max-width: 300px;
+	margin-bottom: 5rem;
+}
+
 .sidebar-link {
 	display: inline;
 	padding: 0rem 0.60rem 1rem 0.60rem;
