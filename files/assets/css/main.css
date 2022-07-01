@@ -5650,10 +5650,13 @@ g {
 
 .ext-link {
     position:relative;
-    top:-35px;
-    left:70px;
-    font-size:26px;
+    top:-26px;
+    left:74px;
+    font-size:20px;
     color:var(--muted);
+    background-color:var(--primary);
+    padding:3px;
+    border-radius:.35rem;
 }
 
 /* ------- Font Awesome ------- */
