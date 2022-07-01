@@ -3416,6 +3416,9 @@ small, .small {
 	display: flex;
 	align-items: center;
 }
+.card-thumbnail > a {
+	position: relative;
+}
 .card-block {
 	position: relative; /* fixes stretched-link in card view */
 }
@@ -5650,7 +5653,8 @@ g {
 
 .ext-link {
     position:absolute;
-    margin-left:-26px;
+    bottom: 0;
+    right: 0;
     font-size:20px;
     color:white;
     background-color:var(--primary);
