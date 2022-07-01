@@ -4969,8 +4969,8 @@ lite-youtube.lyt-activated > .lty-playbtn {
 	}
 }
 @keyframes golden {
-	from {filter: sepia(100%) saturate(2) drop-shadow(-1px 1px 1px gold)}
-	to {filter: sepia(100%) saturate(3) drop-shadow(-1px 1px 3px gold)}
+	from {filter: sepia(1) saturate(2)}
+	to {filter: sepia(1) saturate(3) drop-shadow(-1px 1px 5px gold)}
 }
 img.golden, img[g]:not([data-bs-target]) {
 	animation-name: golden !important;
@@ -4982,8 +4982,8 @@ img.golden, img[g]:not([data-bs-target]) {
 
 
 @keyframes glowing {
-	from {filter: sepia(100%) hue-rotate(80deg) saturate(200%)}
-	to {filter: sepia(100%) hue-rotate(80deg) saturate(500%) drop-shadow(-1px 1px 5px lime)}
+	from {filter: sepia(1) hue-rotate(80deg) saturate(2)}
+	to {filter: sepia(1) hue-rotate(80deg) saturate(5) drop-shadow(-1px 1px 5px lime)}
 }
 
 img[glow]:not([data-bs-target]) {
