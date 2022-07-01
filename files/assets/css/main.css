@@ -5648,6 +5648,14 @@ g {
 	color: #789922 !important
 }
 
+.ext-link {
+    position:relative;
+    top:-35px;
+    left:70px;
+    font-size:26px;
+    color:var(--muted);
+}
+
 /* ------- Font Awesome ------- */
 @font-face{
 	font-family:"Font Awesome 6 Pro";
@@ -5996,3 +6004,4 @@ g {
 .fa-square-share-nodes:before{content:"\f1e1"}
 .fa-sidebar:before{content:"\e24e"}
 .fa-panorama:before{content:"\e209"}
+.fa-external-link:before{content:"\f08e"}
