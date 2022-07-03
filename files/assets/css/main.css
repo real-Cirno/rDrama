@@ -5334,14 +5334,14 @@ th, td {
 }
 
 #profile-content--nav .nav-link {
-	font-size: 0.95rem;
+	font-size: 0.85rem;
 	padding: 0.75rem 0.5rem;
 	text-align: center;
 }
 
 @media (max-width: 464px) {
 	#profile-content--nav .nav-link {
-		font-size: 0.85rem;
+		font-size: 0.80rem;
 		padding: 0.75rem 0.25rem;
 	}
 }
