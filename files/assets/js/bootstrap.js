@@ -241,3 +241,10 @@ function showmore() {
 	else
 		btn.innerHTML = 'SHOW LESS'
 }
+
+timestamps = document.querySelectorAll('[data-time]');
+
+for (const e of timestamps) {
+	date = new Date(e.dataset.time*1000);
+	e.innerHTML = date.toString();
+};
