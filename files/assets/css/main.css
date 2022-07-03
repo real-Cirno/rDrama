@@ -3476,9 +3476,10 @@ small, .small {
 .sub-flair {
 	padding: 3px 5px 2px 5px;
 	border-radius: 5px;
-	color: var(--white);
+	color: white;
 	background-color: var(--primary);
 	margin-right: 3px;
+	font-weight: bold;
 }
 .sub-flair:hover {
 	color: var(--white);
