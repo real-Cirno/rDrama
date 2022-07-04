@@ -59,7 +59,7 @@ async function getGif(searchTerm) {
 				container.innerHTML += ('<div class="card bg-white" style="overflow: hidden" data-bs-dismiss="modal" aria-label="Close" onclick="insertGIF(\'' + 'https://media.giphy.com/media/' + data[i].id + '/giphy.webp' + '\',\'' + commentFormID + '\')"><img referrerpolicy="no-referrer" loading="lazy" class="img-fluid" src="' + gifURL[i] + '"></div>');
 			}
 			else {
-				container.innerHTML += ('<div class="card bg-white" style="overflow: hidden" data-bs-dismiss="modal" aria-label="Close" title="by '+data[i].username+' on GIPHY" onclick="insertGIF(\'' + 'https://media.giphy.com/media/' + data[i].id + '/giphy.webp' + '\',\'' + commentFormID + '\')"><img referrerpolicy="no-referrer" loading="lazy" class="img-fluid" src="' + gifURL[i] + '"></div>');
+				container.innerHTML += ('<div class="card bg-white" style="overflow: hidden" data-bs-dismiss="modal" aria-label="Close" title="by '+data[i].username+' on GIPHY" data-bs-toggle="tooltip" data-bs-placement="bottom" onclick="insertGIF(\'' + 'https://media.giphy.com/media/' + data[i].id + '/giphy.webp' + '\',\'' + commentFormID + '\')"><img referrerpolicy="no-referrer" loading="lazy" class="img-fluid" src="' + gifURL[i] + '"></div>');
 			}
 			noGIFs.innerHTML = null;
 			loadGIFs.innerHTML = '<div class="text-center py-3"><div class="mb-3"><i class="fas fa-grin-beam-sweat text-gray-500" style="font-size: 3.5rem"></i></div><p class="font-weight-bold text-gray-500 mb-0">Thou&#39;ve reached the end of the list!</p></div>';
