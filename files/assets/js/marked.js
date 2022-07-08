@@ -64,7 +64,7 @@ function markdown(first, second, dialog) {
 			var emoji = old.replace(/[:!@#]/g,'').toLowerCase();
 			var mirroredClass = old.indexOf('!') == -1 ? '' : 'mirrored';
 			var emojiClass = old.indexOf('#') == -1 ? 'emoji' : 'emoji-lg';
-			if (emoji.endsWith('pat')) {
+			if (emoji.endsWith('pat') && emoji != 'marseyunpettablepat') {
 				emoji = emoji.substr(0, emoji.length - 3);
 				var url = old.indexOf('@') != -1 ? `/@${emoji}/pic` : `/e/${emoji}.webp`;
 				input = input.replace(old, `<span class="pat-preview ${mirroredClass}" data-bs-toggle="tooltip"><img src="/i/hand.webp"><img class="${emojiClass}" src="${url}"></span>`);
