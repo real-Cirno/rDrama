@@ -52,3 +52,11 @@ body, .navbar-light, .navbar-dark, .card, .modal-content, .comment-write textare
     border-radius: 6px;
     margin-top: 6px;
 }
+
+.table th, .table td {
+	border-top: none;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+	background-color: rgba(0, 0, 0, 0.3);
+}
