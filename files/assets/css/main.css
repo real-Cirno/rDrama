@@ -5569,10 +5569,12 @@ audio, video {
 	font-size: 0.9rem;
 }
 
-#sidebar--rules--head {
+.sidebar--heading {
+	font-size: 1.4rem;
 	margin-bottom: 1rem;
 	text-align: center;
 	text-decoration: underline;
+	text-transform: uppercase;
 }
 
 #sidebar--rules--list {
