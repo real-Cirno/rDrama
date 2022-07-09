@@ -242,14 +242,14 @@ function showmore() {
 		btn.innerHTML = 'SHOW LESS'
 }
 
-timestamps = document.querySelectorAll('[data-time]');
+const timestamps = document.querySelectorAll('[data-time]');
 
 for (const e of timestamps) {
-	date = new Date(e.dataset.time*1000);
+	const date = new Date(e.dataset.time*1000);
 	e.innerHTML = date.toString();
 };
 
 function timestamp(str, ti) {
-	date = new Date(ti*1000);
+	const date = new Date(ti*1000);
 	document.getElementById(str).setAttribute("data-bs-original-title", date.toString());
 };
